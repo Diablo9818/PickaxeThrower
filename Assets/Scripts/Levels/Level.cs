@@ -10,6 +10,7 @@ public class Level : MonoBehaviour
     [SerializeField] private Wallet_UI _walletUI;
     [SerializeField] private StrenghtSellPanel _strenghtSellPanel;
     [SerializeField] private PickaxeSellPanel _pickaxeSellPanel;
+    [SerializeField] private WalletManager _walletManager;
 
     public WinPanel WinPanel => _winPanel;
 
@@ -19,6 +20,7 @@ public class Level : MonoBehaviour
         _walletUI.Init(wallet);
         _strenghtSellPanel.Init(wallet);
         _pickaxeSellPanel.Init(wallet);
+        _walletManager.Init(wallet);
 
         foreach (DamagablePerson enemy in _enemies)
         {

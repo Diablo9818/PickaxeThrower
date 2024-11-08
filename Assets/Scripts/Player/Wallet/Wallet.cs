@@ -17,6 +17,7 @@ public class Wallet : MonoBehaviour
         {
             _coins += coinsToAdd;
             TotalCoinsChanged?.Invoke(Coins);
+            //PlayerPrefs.SetInt("Coins", Coins);
 
             print($"Coins={Coins}");
         }

@@ -23,7 +23,7 @@ public class LevelSpawner : MonoBehaviour
     {
         GamePhase.Pause();
         _demoLevel.SetActive(false);
-        Level level = Instantiate(levels[4]);
+        Level level = Instantiate(levels[_currentLevelIndex]);
         _currentLevel = level;
         level.Init(_wallet);
         _winPanel = level.WinPanel;

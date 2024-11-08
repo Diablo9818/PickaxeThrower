@@ -51,8 +51,7 @@ public class Enemy : MonoBehaviour
         InvokeTotalCountChangedWithDelay(3f);
         Instantiate(_effect, transform.position, transform.rotation);
         gameObject.SetActive(false);
-        var deadEnemy = Instantiate(_deadEnemy, transform.position, transform.rotation);
-        deadEnemy.Init(_wallet);
+        Instantiate(_deadEnemy, transform.position, transform.rotation);
         Destroy(transform.parent.gameObject,3f);
     }
 

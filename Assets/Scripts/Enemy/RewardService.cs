@@ -7,9 +7,9 @@ public class RewardService : MonoBehaviour
 {
     [SerializeField] private Coin _coin;
     [SerializeField] float spawnRadius = 1.0f;
-
-    public event UnityAction<int> OnRewarded;
-
+    [SerializeField] private int _maxCoin;
+    [SerializeField] private int _minCoin;
+    [SerializeField] private RewardEvent _rewardEvent;
 
     void Start()
     {
@@ -18,8 +18,8 @@ public class RewardService : MonoBehaviour
 
     private void SpawnCoins()
     {
-        int coinCount = Random.Range(1, 4);
-        OnRewarded?.Invoke(coinCount);
+        int coinCount = Random.Range(_minCoin, _maxCoin);
+        _rewardEvent.Raise(coinCount);
 
         for (int i = 0; i < coinCount; i++)
         {

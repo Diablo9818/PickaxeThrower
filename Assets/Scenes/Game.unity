@@ -1916,7 +1916,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7187809252008737919
 Transform:
   m_ObjectHideFlags: 0
@@ -2277,6 +2277,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemyCount: 0
+  _isBossHere: 0
+  _isBossEnabled: 0
+  _boss: {fileID: 0}
   TotalEnemy: 0
 --- !u!1 &9130091630523638400
 GameObject:

@@ -2389,7 +2389,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7996018189856450812}
   - component: {fileID: 6860529046353231561}
-  - component: {fileID: 6733491162687828341}
+  - component: {fileID: 4011222985900935386}
   m_Layer: 0
   m_Name: Level_5
   m_TagString: Untagged
@@ -2452,7 +2452,7 @@ MonoBehaviour:
   _walletUI: {fileID: 1285896612738358444}
   _strenghtSellPanel: {fileID: 3433013660566230733}
   _pickaxeSellPanel: {fileID: 6241639621657201200}
---- !u!114 &6733491162687828341
+--- !u!114 &4011222985900935386
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2461,13 +2461,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 8570252878041303461}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbbe37dd18eeed44f8b20fadc5228f3b, type: 3}
+  m_Script: {fileID: 11500000, guid: 465b3e89f0fc90b479afe4080d8fa572, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _shooter: {fileID: 8737840297853305188}
   _enemyLevelController: {fileID: 2794450101209398805}
-  _bossHealth: {fileID: 3313857119738525118}
   _levelUI: {fileID: 6541440673589715154}
+  _bossHealth: {fileID: 3313857119738525118}
 --- !u!1 &8642466378818608156
 GameObject:
   m_ObjectHideFlags: 0

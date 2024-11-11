@@ -569,6 +569,7 @@ MonoBehaviour:
   - {fileID: 389276050321036807, guid: 7ea37727e6849c94cb9ede9c2dec8236, type: 3}
   - {fileID: 4208519038121699994, guid: b69ba8c1fa193e64e9ed580dcec19caa, type: 3}
   - {fileID: 6860529046353231561, guid: b7cfc52eee45b47438301b4ff5e6c925, type: 3}
+  - {fileID: 124759222201448897, guid: 179196c3f02d67947aa3db35273b7e10, type: 3}
   _demoLevel: {fileID: 6654204652448352710}
   _wallet: {fileID: 2044671236}
 --- !u!1001 &1574702739

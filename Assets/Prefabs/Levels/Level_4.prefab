@@ -314,6 +314,7 @@ MonoBehaviour:
   - {fileID: 752072509950049170}
   - {fileID: 2580889587562955230}
   _winPanel: {fileID: 6904851913322076022}
+  _loosePanel: {fileID: 7230550892558146016}
   _walletUI: {fileID: 6192967157470520364}
   _strenghtSellPanel: {fileID: 7749913502852591181}
   _pickaxeSellPanel: {fileID: 1348679465121919664}
@@ -3103,5 +3104,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68f2e5d13097a48438455d230a711d78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7230550892558146016 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1741927327811912267, guid: 02b7826a6b591bd4197f7f835219a201, type: 3}
+  m_PrefabInstance: {fileID: 8967935791813204907}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 472132a329337e440bf330716862e03a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

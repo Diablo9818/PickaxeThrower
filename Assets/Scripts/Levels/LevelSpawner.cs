@@ -5,37 +5,50 @@ using UnityEngine;
 public class LevelSpawner : MonoBehaviour
 {
     [SerializeField] private List<Level> levels;
-    [SerializeField] private GameObject _demoLevel;
     [SerializeField] private Wallet _wallet;
 
-    private int _currentLevelIndex=0;
+    private int _currentLevelIndex=5;
 
     private Level _currentLevel;
     private WinPanel _winPanel;
+    private LoosePanel _loosePanel;
 
     private void Start()
     {
-        CreateLevel();
+        CreateLevel(_currentLevelIndex);
     }
 
 
-    public void CreateLevel()
+    private void CreateLevel(int levelIndex)
     {
         GamePhase.Pause();
-        _demoLevel.SetActive(false);
-        Level level = Instantiate(levels[_currentLevelIndex]);
+        Level level = Instantiate(levels[levelIndex]);
         _currentLevel = level;
+        InstantiateLevel(_currentLevel);
+        
+    }
+
+    private void InstantiateLevel(Level level)
+    {
         level.Init(_wallet);
         _winPanel = level.WinPanel;
+        _loosePanel = level.LoosePanel;
         _winPanel.OnNextLevel += GoToNextLevel;
-        _currentLevelIndex++;
+        _loosePanel.OnLevelRestarted += RestartLevel;
     }
 
     private void GoToNextLevel()
     {
+        _currentLevelIndex++;
         _winPanel.OnNextLevel -= GoToNextLevel;
-        _demoLevel.SetActive(true);
+        _loosePanel.OnLevelRestarted -= RestartLevel;
         Destroy(_currentLevel.gameObject);
-        CreateLevel();
+        CreateLevel(_currentLevelIndex);
+    }
+
+    private void RestartLevel()
+    {
+        Destroy(_currentLevel.gameObject);
+        CreateLevel(_currentLevelIndex);
     }
 }

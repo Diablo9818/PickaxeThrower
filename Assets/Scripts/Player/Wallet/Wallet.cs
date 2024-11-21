@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class Wallet : MonoBehaviour
 {
-    private int _coins=50;
+    private int _coins=6;
     public event UnityAction<int> TotalCoinsChanged;
 
 

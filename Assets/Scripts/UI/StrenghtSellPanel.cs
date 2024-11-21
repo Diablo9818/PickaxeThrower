@@ -1,5 +1,6 @@
 ﻿using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class StrenghtSellPanel:MonoBehaviour
@@ -8,6 +9,7 @@ public class StrenghtSellPanel:MonoBehaviour
     [SerializeField] private Button _buyButton;
     [SerializeField] private TextMeshProUGUI _priceText;
     [SerializeField] private int _price;
+    public event UnityAction<int> OnStrengthCountChanged;
 
     public void Init(Wallet wallet)
     {
@@ -33,6 +35,7 @@ public class StrenghtSellPanel:MonoBehaviour
             int pickaxeStrenght = PlayerPrefs.GetInt("PickaxeStrenght");
             pickaxeStrenght += 1;
             PlayerPrefs.SetInt("PickaxeStrenght", pickaxeStrenght);
+            OnStrengthCountChanged?.Invoke(pickaxeStrenght);
             print("Sell is done");
         }
         else

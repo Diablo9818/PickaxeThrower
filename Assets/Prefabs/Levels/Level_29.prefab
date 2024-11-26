@@ -418,9 +418,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4318925182186867621, guid: 0e359bf2748302644a698f7058eb4577, type: 3}
+      propertyPath: _price
+      value: 103
+      objectReference: {fileID: 0}
     - target: {fileID: 4694867757699169720, guid: 0e359bf2748302644a698f7058eb4577, type: 3}
       propertyPath: m_text
       value: Level 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 4815937916347897688, guid: 0e359bf2748302644a698f7058eb4577, type: 3}
+      propertyPath: _price
+      value: 103
       objectReference: {fileID: 0}
     - target: {fileID: 4958759404053907602, guid: 0e359bf2748302644a698f7058eb4577, type: 3}
       propertyPath: m_AnchorMax.y

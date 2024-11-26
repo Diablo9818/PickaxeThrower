@@ -131,6 +131,14 @@ PrefabInstance:
       propertyPath: m_text
       value: Level 22
       objectReference: {fileID: 0}
+    - target: {fileID: 3901696385024266653, guid: 8867ae48afdfdea49959bc7f1956e41a, type: 3}
+      propertyPath: _price
+      value: 69
+      objectReference: {fileID: 0}
+    - target: {fileID: 5701519360341871968, guid: 8867ae48afdfdea49959bc7f1956e41a, type: 3}
+      propertyPath: _price
+      value: 69
+      objectReference: {fileID: 0}
     - target: {fileID: 6968342218956546673, guid: 8867ae48afdfdea49959bc7f1956e41a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -62.272125

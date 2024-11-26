@@ -60,6 +60,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3782941505101697861, guid: d67db5e81354d264d8f84cae32200254, type: 3}
+      propertyPath: _price
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 4003020693774842277, guid: d67db5e81354d264d8f84cae32200254, type: 3}
       propertyPath: m_text
       value: Level 9
@@ -68,6 +72,10 @@ PrefabInstance:
       propertyPath: _obstacle
       value: 
       objectReference: {fileID: 7213543398592425333}
+    - target: {fileID: 5568125720084320184, guid: d67db5e81354d264d8f84cae32200254, type: 3}
+      propertyPath: _price
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 7128827834312958121, guid: d67db5e81354d264d8f84cae32200254, type: 3}
       propertyPath: m_LocalPosition.x
       value: -62.272125

@@ -47,8 +47,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a37596acbc7c944abefc27a4f178235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _position: {x: 179, y: 0, z: 0}
-  _duration: 0.35
+  _position: {x: 360, y: 0, z: 0}
+  _duration: 0.5
   _repeats: -1
   _loopType: 0
 --- !u!114 &3381211748473509270
@@ -63,8 +63,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e7a68d6b9e38d741b234faf95f22deb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _position: {x: -179, y: 0, z: 0}
-  _duration: 0.35
+  _position: {x: -360, y: 0, z: 0}
+  _duration: 0.5
   _repeats: -1
   _loopType: 0
 --- !u!114 &2140405297813963696
@@ -130,6 +130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 8
   _rotatorController: {fileID: 2140405297813963696}
+  _enemyLevelController: {fileID: 0}
 --- !u!54 &7441667631067636809
 Rigidbody:
   m_ObjectHideFlags: 0

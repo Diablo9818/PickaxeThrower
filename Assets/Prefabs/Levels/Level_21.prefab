@@ -280,9 +280,17 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3058063824419705159, guid: 16ea3c1fea98a074bb91eb40a97ed442, type: 3}
+      propertyPath: _price
+      value: 65
+      objectReference: {fileID: 0}
     - target: {fileID: 5816414395557308250, guid: 16ea3c1fea98a074bb91eb40a97ed442, type: 3}
       propertyPath: m_text
       value: Level 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001659267545746874, guid: 16ea3c1fea98a074bb91eb40a97ed442, type: 3}
+      propertyPath: _price
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 6146998070748664432, guid: 16ea3c1fea98a074bb91eb40a97ed442, type: 3}
       propertyPath: m_AnchorMax.y

@@ -95,7 +95,6 @@ GameObject:
   - component: {fileID: 4410717469051160854}
   - component: {fileID: 4733386211538016344}
   - component: {fileID: 5075233803626529955}
-  - component: {fileID: 8226020460873208387}
   - component: {fileID: 3313857119738525118}
   - component: {fileID: 2154632084362256578}
   m_Layer: 0
@@ -187,27 +186,6 @@ MonoBehaviour:
   _rigidbody: {fileID: 4410717469051160854}
   _upBorder: {fileID: 6249981132690648542}
   _downBorder: {fileID: 3863493979982130622}
---- !u!95 &8226020460873208387
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100002}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3611c133118dc28429ff76d64330d71c, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &3313857119738525118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -247,7 +225,7 @@ GameObject:
   - component: {fileID: 400004}
   - component: {fileID: 3300002}
   - component: {fileID: 2300002}
-  - component: {fileID: 5679100845228159040}
+  - component: {fileID: 8326349731922386929}
   m_Layer: 0
   m_Name: Rotor
   m_TagString: Untagged
@@ -263,7 +241,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100004}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0000018099951, y: 0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.00000022159837, y: 2.8446393, z: -0.023149014}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -320,20 +298,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &5679100845228159040
+--- !u!114 &8326349731922386929
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100004}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 824387c18827bcf41b0fa206622cb8cb, type: 3}
+  m_Script: {fileID: 11500000, guid: a5ae47fddeec4a24b94318fa8c01a0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _position: {x: 0, y: 359, z: 0}
-  _duration: 3
+  _position: {x: 0, y: 360, z: 0}
+  _duration: 1
   _repeats: -1
   _loopType: 0
 --- !u!1 &100006
@@ -347,6 +325,7 @@ GameObject:
   - component: {fileID: 400006}
   - component: {fileID: 3300004}
   - component: {fileID: 2300004}
+  - component: {fileID: 1353734237770620433}
   m_Layer: 0
   m_Name: Rotor_Back
   m_TagString: Untagged
@@ -419,6 +398,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1353734237770620433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5ae47fddeec4a24b94318fa8c01a0c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _position: {x: 360, y: 0, z: 0}
+  _duration: 1
+  _repeats: -1
+  _loopType: 0
 --- !u!1 &67327682272188036
 GameObject:
   m_ObjectHideFlags: 0
@@ -3302,6 +3297,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7996018189856450812}
     m_Modifications:
+    - target: {fileID: 1265196839850497979, guid: 5f908f13d4a4a6e499425a7b41be705a, type: 3}
+      propertyPath: _price
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 1750278672932471747, guid: 5f908f13d4a4a6e499425a7b41be705a, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -3430,6 +3429,50 @@ PrefabInstance:
       propertyPath: Game
       value: 
       objectReference: {fileID: 5635774988535254105}
+    - target: {fileID: 4239863295270623217, guid: 5f908f13d4a4a6e499425a7b41be705a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239863295270623217, guid: 5f908f13d4a4a6e499425a7b41be705a, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239863295270623217, guid: 5f908f13d4a4a6e499425a7b41be705a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239863295270623217, guid: 5f908f13d4a4a6e499425a7b41be705a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239863295270623217, guid: 5f908f13d4a4a6e499425a7b41be705a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239863295871472935, guid: 5f908f13d4a4a6e499425a7b41be705a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239863295871472935, guid: 5f908f13d4a4a6e499425a7b41be705a, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239863295871472935, guid: 5f908f13d4a4a6e499425a7b41be705a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239863295871472935, guid: 5f908f13d4a4a6e499425a7b41be705a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239863295871472935, guid: 5f908f13d4a4a6e499425a7b41be705a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7544831490773797702, guid: 5f908f13d4a4a6e499425a7b41be705a, type: 3}
+      propertyPath: _price
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7730009955848642982, guid: 5f908f13d4a4a6e499425a7b41be705a, type: 3}
       propertyPath: m_text
       value: Level 5

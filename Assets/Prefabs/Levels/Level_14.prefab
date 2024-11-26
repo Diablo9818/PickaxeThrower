@@ -136,6 +136,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2360164664378351447, guid: 2f22ed10a065a954ea13447482e67b0a, type: 3}
+      propertyPath: _price
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 6483702246169101226, guid: 2f22ed10a065a954ea13447482e67b0a, type: 3}
+      propertyPath: _price
+      value: 37
+      objectReference: {fileID: 0}
     - target: {fileID: 6487610678366988618, guid: 2f22ed10a065a954ea13447482e67b0a, type: 3}
       propertyPath: m_text
       value: Level 14

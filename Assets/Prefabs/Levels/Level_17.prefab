@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Level 17
       objectReference: {fileID: 0}
+    - target: {fileID: 563660156078003124, guid: 02acb8d8340d5744f8cf2866078c6b9a, type: 3}
+      propertyPath: _price
+      value: 48
+      objectReference: {fileID: 0}
     - target: {fileID: 4405060701989502609, guid: 02acb8d8340d5744f8cf2866078c6b9a, type: 3}
       propertyPath: m_Name
       value: Level_17
@@ -179,6 +183,10 @@ PrefabInstance:
     - target: {fileID: 6263865193761041809, guid: 02acb8d8340d5744f8cf2866078c6b9a, type: 3}
       propertyPath: m_LocalPosition.y
       value: 5.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9144775072226905929, guid: 02acb8d8340d5744f8cf2866078c6b9a, type: 3}
+      propertyPath: _price
+      value: 48
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

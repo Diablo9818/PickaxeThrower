@@ -105,6 +105,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 53.52
       objectReference: {fileID: 0}
+    - target: {fileID: 4156571127532134399, guid: 481aa97a16a4faa42ace1b665a808200, type: 3}
+      propertyPath: _price
+      value: 98
+      objectReference: {fileID: 0}
     - target: {fileID: 4205579432643343647, guid: 481aa97a16a4faa42ace1b665a808200, type: 3}
       propertyPath: m_text
       value: Level 28
@@ -148,6 +152,10 @@ PrefabInstance:
     - target: {fileID: 4587954194773721827, guid: 481aa97a16a4faa42ace1b665a808200, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4653725836251104002, guid: 481aa97a16a4faa42ace1b665a808200, type: 3}
+      propertyPath: _price
+      value: 98
       objectReference: {fileID: 0}
     - target: {fileID: 7767792481808204616, guid: 481aa97a16a4faa42ace1b665a808200, type: 3}
       propertyPath: m_AnchorMax.y

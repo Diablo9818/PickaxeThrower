@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1228057595480041631, guid: ac13b428782c7274eb0e01ba746a3bab, type: 3}
+      propertyPath: _price
+      value: 78
+      objectReference: {fileID: 0}
     - target: {fileID: 1367067600623321727, guid: ac13b428782c7274eb0e01ba746a3bab, type: 3}
       propertyPath: m_text
       value: Level 24
@@ -179,6 +183,10 @@ PrefabInstance:
     - target: {fileID: 6826718761950949888, guid: ac13b428782c7274eb0e01ba746a3bab, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7507692403704362082, guid: ac13b428782c7274eb0e01ba746a3bab, type: 3}
+      propertyPath: _price
+      value: 78
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

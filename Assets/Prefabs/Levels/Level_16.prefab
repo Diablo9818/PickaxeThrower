@@ -60,6 +60,14 @@ PrefabInstance:
       propertyPath: m_text
       value: Level 16
       objectReference: {fileID: 0}
+    - target: {fileID: 2818802590152799648, guid: 4c8b0ba0395eb65498142c3f5e265313, type: 3}
+      propertyPath: _price
+      value: 44
+      objectReference: {fileID: 0}
+    - target: {fileID: 6783590454093850973, guid: 4c8b0ba0395eb65498142c3f5e265313, type: 3}
+      propertyPath: _price
+      value: 44
+      objectReference: {fileID: 0}
     - target: {fileID: 7541815710866484713, guid: 4c8b0ba0395eb65498142c3f5e265313, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

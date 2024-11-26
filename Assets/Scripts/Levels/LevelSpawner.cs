@@ -7,7 +7,7 @@ public class LevelSpawner : MonoBehaviour
     [SerializeField] private List<Level> levels;
     [SerializeField] private Wallet _wallet;
 
-    private int _currentLevelIndex=0;
+    [SerializeField] private int _currentLevelIndex=0;
 
     private Level _currentLevel;
     private WinPanel _winPanel;

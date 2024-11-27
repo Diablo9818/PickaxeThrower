@@ -112,8 +112,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1943347200801055653, guid: ad835c39cd898f44fb4195ae55060429, type: 3}
       propertyPath: m_Name
-      value: MovingEnemyPlatform Variant
+      value: IdleEnemyPlatform
       objectReference: {fileID: 0}
+    - target: {fileID: 4153460709820184850, guid: ad835c39cd898f44fb4195ae55060429, type: 3}
+      propertyPath: collider
+      value: 
+      objectReference: {fileID: 6391195595347193329}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7894207302228253268, guid: ad835c39cd898f44fb4195ae55060429, type: 3}
@@ -126,5 +130,10 @@ PrefabInstance:
 --- !u!4 &3633585672388299205 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1571898988060180986, guid: ad835c39cd898f44fb4195ae55060429, type: 3}
+  m_PrefabInstance: {fileID: 2863611136026658879}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &6391195595347193329 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 9155679159694730702, guid: ad835c39cd898f44fb4195ae55060429, type: 3}
   m_PrefabInstance: {fileID: 2863611136026658879}
   m_PrefabAsset: {fileID: 0}

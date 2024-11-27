@@ -85,6 +85,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2507914975627095094, guid: 91c4009e24cdf164dae56b43b3e1454f, type: 3}
+      propertyPath: collider
+      value: 
+      objectReference: {fileID: 9155679159694730702}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -93,6 +97,11 @@ PrefabInstance:
 --- !u!4 &1974706934234906406 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4073273749891586, guid: 91c4009e24cdf164dae56b43b3e1454f, type: 3}
+  m_PrefabInstance: {fileID: 1975367061814973732}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &9155679159694730702 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 7234584542671024362, guid: 91c4009e24cdf164dae56b43b3e1454f, type: 3}
   m_PrefabInstance: {fileID: 1975367061814973732}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2090059499973798963

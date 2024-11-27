@@ -53,6 +53,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2507914975627095094, guid: 91c4009e24cdf164dae56b43b3e1454f, type: 3}
+      propertyPath: collider
+      value: 
+      objectReference: {fileID: 8322165709102334663}
+    - target: {fileID: 2507914975627095094, guid: 91c4009e24cdf164dae56b43b3e1454f, type: 3}
       propertyPath: _spawnPoint
       value: 
       objectReference: {fileID: 6552992902584525112}
@@ -80,6 +84,11 @@ MonoBehaviour:
 --- !u!4 &6552992902584525112 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5613954099159470869, guid: 91c4009e24cdf164dae56b43b3e1454f, type: 3}
+  m_PrefabInstance: {fileID: 1664130438111392301}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &8322165709102334663 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 7234584542671024362, guid: 91c4009e24cdf164dae56b43b3e1454f, type: 3}
   m_PrefabInstance: {fileID: 1664130438111392301}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2034382351131054152

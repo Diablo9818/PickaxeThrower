@@ -192,6 +192,10 @@ PrefabInstance:
       propertyPath: _obstacle
       value: 
       objectReference: {fileID: 3943910700208033942}
+    - target: {fileID: 4153460709820184850, guid: ad835c39cd898f44fb4195ae55060429, type: 3}
+      propertyPath: collider
+      value: 
+      objectReference: {fileID: 8074983610208324682}
     - target: {fileID: 6720070218800763277, guid: ad835c39cd898f44fb4195ae55060429, type: 3}
       propertyPath: _pointerManager
       value: 
@@ -221,6 +225,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bab1c750a5136884cbea1f9daa26c45e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8074983610208324682 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 9155679159694730702, guid: ad835c39cd898f44fb4195ae55060429, type: 3}
+  m_PrefabInstance: {fileID: 1089760474194291076}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3556796926796156304
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -862,6 +871,10 @@ PrefabInstance:
       propertyPath: _obstacle
       value: 
       objectReference: {fileID: 5896998046393835833}
+    - target: {fileID: 4153460709820184850, guid: ad835c39cd898f44fb4195ae55060429, type: 3}
+      propertyPath: collider
+      value: 
+      objectReference: {fileID: 1692745805337247205}
     - target: {fileID: 6720070218800763277, guid: ad835c39cd898f44fb4195ae55060429, type: 3}
       propertyPath: _pointerManager
       value: 
@@ -875,6 +888,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad835c39cd898f44fb4195ae55060429, type: 3}
+--- !u!65 &1692745805337247205 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 9155679159694730702, guid: ad835c39cd898f44fb4195ae55060429, type: 3}
+  m_PrefabInstance: {fileID: 7526173553413429291}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &5896998046393835833 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4153460709820184850, guid: ad835c39cd898f44fb4195ae55060429, type: 3}

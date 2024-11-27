@@ -6,6 +6,7 @@ using UnityEngine.Events;
 public class DestroyableObstacle : MonoBehaviour
 {
     [SerializeField] private Mesh mesh;
+    [SerializeField] private Collider collider;
     [SerializeField] private MeshFilter filter;
     [SerializeField] private int _health;
     [SerializeField] private ParticleSystem _effect;
@@ -21,6 +22,7 @@ public class DestroyableObstacle : MonoBehaviour
         {
             pickAxe.SetDirection(-pickAxe.Direction);
             Instantiate(_effect, _spawnPoint.position, transform.rotation);
+            collider.enabled = false;
             pickAxe.DecreaseSpeed(4);
             filter.mesh = mesh;
             _health--;

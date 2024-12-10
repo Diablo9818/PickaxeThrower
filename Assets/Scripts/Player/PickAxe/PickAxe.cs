@@ -9,6 +9,7 @@ public class PickAxe : MonoBehaviour
     [SerializeField] private float _speed;
     [SerializeField] private RotatorController _rotatorController;
     [SerializeField] private EnemyLevelController _enemyLevelController;
+    [SerializeField] private AudioSource _audioSource;
     private int _strenght;
 
     private Transform _playerPosition;
@@ -30,6 +31,7 @@ public class PickAxe : MonoBehaviour
     private void Start()
     {
         StartCoroutine(TeleportPlayer());
+        _audioSource.Play();
 
     }
 

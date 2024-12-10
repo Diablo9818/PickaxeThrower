@@ -118,6 +118,14 @@ PrefabInstance:
       propertyPath: collider
       value: 
       objectReference: {fileID: 6391195595347193329}
+    - target: {fileID: 9155679159694730702, guid: ad835c39cd898f44fb4195ae55060429, type: 3}
+      propertyPath: m_Size.y
+      value: 0.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 9155679159694730702, guid: ad835c39cd898f44fb4195ae55060429, type: 3}
+      propertyPath: m_Center.y
+      value: -0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7894207302228253268, guid: ad835c39cd898f44fb4195ae55060429, type: 3}

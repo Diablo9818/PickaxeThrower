@@ -5,16 +5,11 @@ using UnityEngine.Events;
 
 public class DestroyableObstacle : MonoBehaviour
 {
-    [SerializeField] private Mesh mesh;
-    [SerializeField] private Collider collider;
-    [SerializeField] private MeshFilter filter;
-    [SerializeField] private int _health;
+    [SerializeField] private GameObject _destroyedObstacle;
+    [SerializeField] private Level _parent;
     [SerializeField] private ParticleSystem _effect;
     [SerializeField] private Transform _spawnPoint;
-    [SerializeField] private Transform _secondSpawnPoint;
-
-    public event UnityAction OnDestroy;
-
+    [SerializeField] private AudioClip _destroySound;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -22,18 +17,11 @@ public class DestroyableObstacle : MonoBehaviour
         {
             pickAxe.SetDirection(-pickAxe.Direction);
             Instantiate(_effect, _spawnPoint.position, transform.rotation);
-            collider.enabled = false;
+            var destroyedObstacle = Instantiate(_destroyedObstacle, transform.position, transform.rotation);
+            destroyedObstacle.transform.SetParent(_parent.transform);
             pickAxe.DecreaseSpeed(4);
-            filter.mesh = mesh;
-            _health--;
-
-            if(_health <= 0)
-            {
-                Destroy(gameObject);
-                Instantiate(_effect, _secondSpawnPoint.position, transform.rotation);
-                OnDestroy?.Invoke();
-            }
+            Debug.Log("Pickaxe is here");
+            gameObject.SetActive(false);
         }
     }
-
 }

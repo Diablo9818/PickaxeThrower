@@ -544,7 +544,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5370013973381809751, guid: 01c81815249e2dc4dbadbb976dc025ac, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.44930077
+      value: 1.51
       objectReference: {fileID: 0}
     - target: {fileID: 5370013973381809751, guid: 01c81815249e2dc4dbadbb976dc025ac, type: 3}
       propertyPath: m_LocalRotation.w
@@ -816,13 +816,25 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2507914975627095094, guid: 91c4009e24cdf164dae56b43b3e1454f, type: 3}
-      propertyPath: collider
+      propertyPath: _parent
       value: 
-      objectReference: {fileID: 9005700659321402095}
+      objectReference: {fileID: 159110542693508157}
     - target: {fileID: 2507914975627095094, guid: 91c4009e24cdf164dae56b43b3e1454f, type: 3}
       propertyPath: _spawnPoint
       value: 
       objectReference: {fileID: 6157547436271587600}
+    - target: {fileID: 2507914975627095094, guid: 91c4009e24cdf164dae56b43b3e1454f, type: 3}
+      propertyPath: _destroyedObstacle
+      value: 
+      objectReference: {fileID: 1770966843784234, guid: 20acbdb223166c04789016ac05735b3d, type: 3}
+    - target: {fileID: 7234584542671024362, guid: 91c4009e24cdf164dae56b43b3e1454f, type: 3}
+      propertyPath: m_Size.y
+      value: 0.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 7234584542671024362, guid: 91c4009e24cdf164dae56b43b3e1454f, type: 3}
+      propertyPath: m_Center.y
+      value: -0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -847,11 +859,6 @@ MonoBehaviour:
 --- !u!4 &6157547436271587600 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5613954099159470869, guid: 91c4009e24cdf164dae56b43b3e1454f, type: 3}
-  m_PrefabInstance: {fileID: 1773509260721406469}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &9005700659321402095 stripped
-BoxCollider:
-  m_CorrespondingSourceObject: {fileID: 7234584542671024362, guid: 91c4009e24cdf164dae56b43b3e1454f, type: 3}
   m_PrefabInstance: {fileID: 1773509260721406469}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1789129841263969936
@@ -1578,9 +1585,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2507914975627095094, guid: 91c4009e24cdf164dae56b43b3e1454f, type: 3}
-      propertyPath: collider
+      propertyPath: _parent
       value: 
-      objectReference: {fileID: 6528918639766801480}
+      objectReference: {fileID: 159110542693508157}
+    - target: {fileID: 2507914975627095094, guid: 91c4009e24cdf164dae56b43b3e1454f, type: 3}
+      propertyPath: _destroyedObstacle
+      value: 
+      objectReference: {fileID: 1770966843784234, guid: 20acbdb223166c04789016ac05735b3d, type: 3}
+    - target: {fileID: 7234584542671024362, guid: 91c4009e24cdf164dae56b43b3e1454f, type: 3}
+      propertyPath: m_Size.y
+      value: 0.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 7234584542671024362, guid: 91c4009e24cdf164dae56b43b3e1454f, type: 3}
+      propertyPath: m_Center.y
+      value: -0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1600,11 +1619,6 @@ MonoBehaviour:
 --- !u!4 &4536092635833915040 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4073273749891586, guid: 91c4009e24cdf164dae56b43b3e1454f, type: 3}
-  m_PrefabInstance: {fileID: 4538793512305048738}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &6528918639766801480 stripped
-BoxCollider:
-  m_CorrespondingSourceObject: {fileID: 7234584542671024362, guid: 91c4009e24cdf164dae56b43b3e1454f, type: 3}
   m_PrefabInstance: {fileID: 4538793512305048738}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5074498602438617214
@@ -1804,28 +1818,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2507914975627095094, guid: 91c4009e24cdf164dae56b43b3e1454f, type: 3}
-      propertyPath: collider
+      propertyPath: _parent
       value: 
-      objectReference: {fileID: 3282822928106060666}
+      objectReference: {fileID: 159110542693508157}
     - target: {fileID: 2507914975627095094, guid: 91c4009e24cdf164dae56b43b3e1454f, type: 3}
-      propertyPath: _spawnPoint
+      propertyPath: _destroyedObstacle
       value: 
-      objectReference: {fileID: 288304879347914885}
+      objectReference: {fileID: 1770966843784234, guid: 20acbdb223166c04789016ac05735b3d, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91c4009e24cdf164dae56b43b3e1454f, type: 3}
---- !u!4 &288304879347914885 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5613954099159470869, guid: 91c4009e24cdf164dae56b43b3e1454f, type: 3}
-  m_PrefabInstance: {fileID: 5325654172982627216}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &3282822928106060666 stripped
-BoxCollider:
-  m_CorrespondingSourceObject: {fileID: 7234584542671024362, guid: 91c4009e24cdf164dae56b43b3e1454f, type: 3}
-  m_PrefabInstance: {fileID: 5325654172982627216}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5325223839047328146 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4073273749891586, guid: 91c4009e24cdf164dae56b43b3e1454f, type: 3}

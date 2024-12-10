@@ -56,6 +56,10 @@ PrefabInstance:
       propertyPath: _obstacle
       value: 
       objectReference: {fileID: 2556056977344578742}
+    - target: {fileID: 4153460709820184850, guid: ad835c39cd898f44fb4195ae55060429, type: 3}
+      propertyPath: _parent
+      value: 
+      objectReference: {fileID: 1341004568361228167}
     - target: {fileID: 6720070218800763277, guid: ad835c39cd898f44fb4195ae55060429, type: 3}
       propertyPath: _pointerManager
       value: 
@@ -285,6 +289,17 @@ PrefabInstance:
       addedObject: {fileID: 1084381282945236062}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 481aa97a16a4faa42ace1b665a808200, type: 3}
+--- !u!114 &1341004568361228167 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7630938226997993248, guid: 481aa97a16a4faa42ace1b665a808200, type: 3}
+  m_PrefabInstance: {fileID: 8897632301894256807}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8ce4a2c7357763459f8af05d1559f09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1460499301771732148 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8015845553466092563, guid: 481aa97a16a4faa42ace1b665a808200, type: 3}

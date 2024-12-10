@@ -56,6 +56,10 @@ PrefabInstance:
       propertyPath: _obstacle
       value: 
       objectReference: {fileID: 3588274336726536927}
+    - target: {fileID: 4153460709820184850, guid: ad835c39cd898f44fb4195ae55060429, type: 3}
+      propertyPath: _parent
+      value: 
+      objectReference: {fileID: 7071512179703361144}
     - target: {fileID: 6720070218800763277, guid: ad835c39cd898f44fb4195ae55060429, type: 3}
       propertyPath: _pointerManager
       value: 
@@ -418,6 +422,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2556056977344578742, guid: 0e359bf2748302644a698f7058eb4577, type: 3}
+      propertyPath: _parent
+      value: 
+      objectReference: {fileID: 7071512179703361144}
     - target: {fileID: 4318925182186867621, guid: 0e359bf2748302644a698f7058eb4577, type: 3}
       propertyPath: _price
       value: 103
@@ -482,6 +490,10 @@ PrefabInstance:
       propertyPath: _enemyCount
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 8192128415855169783, guid: 0e359bf2748302644a698f7058eb4577, type: 3}
+      propertyPath: _parent
+      value: 
+      objectReference: {fileID: 7071512179703361144}
     - target: {fileID: 8657828020784970365, guid: 0e359bf2748302644a698f7058eb4577, type: 3}
       propertyPath: m_Name
       value: Level_29
@@ -536,6 +548,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40098cf151c1c7a48ae91c00d9213398, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7071512179703361144 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1341004568361228167, guid: 0e359bf2748302644a698f7058eb4577, type: 3}
+  m_PrefabInstance: {fileID: 8124276370810993151}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8ce4a2c7357763459f8af05d1559f09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &7276557167413861707 stripped

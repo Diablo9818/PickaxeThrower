@@ -23,11 +23,5 @@ public class Level : MonoBehaviour
         _strenghtSellPanel.Init(wallet);
         _pickaxeSellPanel.Init(wallet);
         _walletManager.Init(wallet);
-
-        foreach (DamagablePerson enemy in _enemies)
-        {
-            Enemy currentEnemy = enemy.GetComponentInChildren<Enemy>();
-            currentEnemy.Init(wallet);
-        }
     }
 }

@@ -53,13 +53,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2507914975627095094, guid: 91c4009e24cdf164dae56b43b3e1454f, type: 3}
-      propertyPath: collider
+      propertyPath: _parent
       value: 
-      objectReference: {fileID: 7070540527410411865}
+      objectReference: {fileID: 3883215174707950603}
     - target: {fileID: 2507914975627095094, guid: 91c4009e24cdf164dae56b43b3e1454f, type: 3}
       propertyPath: _spawnPoint
       value: 
       objectReference: {fileID: 5445193794536561318}
+    - target: {fileID: 2507914975627095094, guid: 91c4009e24cdf164dae56b43b3e1454f, type: 3}
+      propertyPath: _destroyedObstacle
+      value: 
+      objectReference: {fileID: 1770966843784234, guid: 20acbdb223166c04789016ac05735b3d, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -73,11 +77,6 @@ Transform:
 --- !u!4 &5445193794536561318 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5613954099159470869, guid: 91c4009e24cdf164dae56b43b3e1454f, type: 3}
-  m_PrefabInstance: {fileID: 466671674498795955}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &7070540527410411865 stripped
-BoxCollider:
-  m_CorrespondingSourceObject: {fileID: 7234584542671024362, guid: 91c4009e24cdf164dae56b43b3e1454f, type: 3}
   m_PrefabInstance: {fileID: 466671674498795955}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2684949128023774364
@@ -497,6 +496,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 355167401309083406, guid: afd203be9445e5d46a37ee4adcecbfe0, type: 3}
   m_PrefabInstance: {fileID: 4023602957979979830}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3883215174707950603 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 159110542693508157, guid: afd203be9445e5d46a37ee4adcecbfe0, type: 3}
+  m_PrefabInstance: {fileID: 4023602957979979830}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8ce4a2c7357763459f8af05d1559f09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &5336494321865216985 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9068486983456769007, guid: afd203be9445e5d46a37ee4adcecbfe0, type: 3}

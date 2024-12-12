@@ -78,6 +78,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1571898988060180986, guid: ad835c39cd898f44fb4195ae55060429, type: 3}
   m_PrefabInstance: {fileID: 605755028126559181}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2489985407146910603 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3091200474171705414, guid: ad835c39cd898f44fb4195ae55060429, type: 3}
+  m_PrefabInstance: {fileID: 605755028126559181}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9664afc01d033044aa0522733427920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &3588274336726536927 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4153460709820184850, guid: ad835c39cd898f44fb4195ae55060429, type: 3}
@@ -338,6 +349,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1015899155935660332, guid: 0e359bf2748302644a698f7058eb4577, type: 3}
+      propertyPath: _obstacles.Array.size
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1015899155935660332, guid: 0e359bf2748302644a698f7058eb4577, type: 3}
+      propertyPath: _obstacles.Array.data[13]
+      value: 
+      objectReference: {fileID: 3588274336726536927}
     - target: {fileID: 1084381282945236062, guid: 0e359bf2748302644a698f7058eb4577, type: 3}
       propertyPath: m_LocalPosition.y
       value: 39.43
@@ -490,6 +509,14 @@ PrefabInstance:
       propertyPath: _enemyCount
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 7886029874424262741, guid: 0e359bf2748302644a698f7058eb4577, type: 3}
+      propertyPath: _enemies.Array.size
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7886029874424262741, guid: 0e359bf2748302644a698f7058eb4577, type: 3}
+      propertyPath: _enemies.Array.data[13]
+      value: 
+      objectReference: {fileID: 2489985407146910603}
     - target: {fileID: 8192128415855169783, guid: 0e359bf2748302644a698f7058eb4577, type: 3}
       propertyPath: _parent
       value: 

@@ -15,6 +15,8 @@ public class PlayerRotator : MonoBehaviour
 
     private bool _isTurningRight = true;
 
+    private GamePhase _gamePhase;
+
     public bool IsTurningRight=> _isTurningRight;
 
     private void Start()
@@ -22,14 +24,19 @@ public class PlayerRotator : MonoBehaviour
         lastMouseX = Input.mousePosition.x;
     }
 
-    void Update()
+    public void Init(GamePhase gamePhase)
+    {
+        _gamePhase = gamePhase;
+    }
+
+    private void Update()
     {
         transform.position = new Vector3(0, transform.position.y, transform.position.z);
     }
 
     public void Rotate()
     {
-        if(GamePhase.IsPaused) return;
+        if(_gamePhase.IsPaused) return;
 
         arrow.SetActive(true);
         float mouseX = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;

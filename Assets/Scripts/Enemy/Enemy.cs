@@ -10,14 +10,21 @@ public class Enemy : MonoBehaviour
     [SerializeField] private ParticleSystem _effect;
     [SerializeField] private Rigidbody _rigidbody;
     [SerializeField] private Animator _animator;
-    [SerializeField] private AudioSource _fallAudio;
-    [SerializeField] private AudioSource _deathAudio;
     [SerializeField] private AudioClip _fall;
     [SerializeField] private AudioClip _death;
+
+    private AudioService _audioService;
 
     private bool _isFalling = false;
 
     public  UnityEvent OnDeath;
+
+    private bool _isSoundPlaying = false;
+
+    public void Init(AudioService audioService)
+    {
+        _audioService = audioService;
+    }
 
     private void InvokeTotalCountChangedWithDelay(float delay)
     {
@@ -26,8 +33,7 @@ public class Enemy : MonoBehaviour
 
     public void Die()
     {
-        _fallAudio.PlayOneShot(_fall);
-        _fallAudio.Play();
+        _audioService.PlaySound(_death, false);
         InvokeTotalCountChangedWithDelay(3f);
         Instantiate(_effect, transform.position, transform.rotation);
         gameObject.SetActive(false);
@@ -60,23 +66,18 @@ public class Enemy : MonoBehaviour
 
     private void CreateRay()
     {
-        // Начальная точка рейкаста — позиция объекта
         Vector3 startPosition = transform.position;
 
-        // Направление рейкаста — вниз
         Vector3 direction = Vector3.down;
-
-        // Длина рейкаста — 1 метр
         float distance = 1.0f;
 
-        // Визуализация рейкаста в редакторе (опционально)
         Debug.DrawRay(startPosition, direction * distance, Color.red);
 
         if (!Physics.Raycast(startPosition, direction, out RaycastHit hit, distance))
         {
             _animator.SetTrigger("Fall");
             _isFalling = true;
-             _fallAudio.PlayOneShot(_fall);
+            PlayFallSound();
             Debug.Log("No collision detected within 1 meter downwards.");
         }
     }
@@ -85,5 +86,19 @@ public class Enemy : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         OnDeath?.Invoke();
+    }
+
+    private void PlayFallSound()
+    {
+        if (_isSoundPlaying)
+        {
+            return;
+
+        }
+        else
+        {
+            _audioService.PlaySound(_fall, false);
+            _isSoundPlaying = true;
+        }
     }
 }

@@ -11,7 +11,12 @@ public class Menu_UI : MonoBehaviour
     [SerializeField] private Canvas Game;
     public event UnityAction OnGameStarted;
 
+    private GamePhase _gamePhase;
 
+    public void Init(GamePhase gamePhase)
+    {
+        _gamePhase = gamePhase;
+    }
     private void OnEnable()
     {
         _playButton.onClick.AddListener(StartGame);
@@ -23,6 +28,6 @@ public class Menu_UI : MonoBehaviour
         Game.gameObject.SetActive(true);
 
         OnGameStarted?.Invoke();
-        GamePhase.Activate();
+        _gamePhase.Activate();
     }
 }

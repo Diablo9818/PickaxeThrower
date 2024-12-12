@@ -190,6 +190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _exploder: {fileID: 780826905794593750}
+  _explosion: {fileID: 8300000, guid: b652a059d5bcf8d4896dbabda0c9d6b5, type: 3}
 --- !u!54 &6456905433348165293
 Rigidbody:
   m_ObjectHideFlags: 0

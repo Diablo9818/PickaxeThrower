@@ -120,9 +120,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bab1c750a5136884cbea1f9daa26c45e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyedObstacle: {fileID: 1770966843784234, guid: 20acbdb223166c04789016ac05735b3d, type: 3}
+  _destroyedObstacle: {fileID: 1770966843784234, guid: 20acbdb223166c04789016ac05735b3d, type: 3}
+  _parent: {fileID: 0}
   _effect: {fileID: 265766274217486953, guid: d3015b7eea383f64d8b81f965cc466e7, type: 3}
   _spawnPoint: {fileID: 5613954099159470869}
+  _destroySound: {fileID: 8300000, guid: 2e23f896d3c11cc4996d46a553acd64b, type: 3}
 --- !u!54 &5492917481993354192
 Rigidbody:
   m_ObjectHideFlags: 0

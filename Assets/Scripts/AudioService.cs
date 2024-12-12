@@ -12,8 +12,9 @@ public class AudioService : MonoBehaviour
         _musicSource.Play();
     }
 
-    public void PlaySound(AudioClip clip)
+    public void PlaySound(AudioClip clip, bool isLoopnig)
     {
+        _soundSource.loop  = isLoopnig;
         _soundSource.PlayOneShot(clip);
     }
 }

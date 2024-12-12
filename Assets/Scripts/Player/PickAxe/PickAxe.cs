@@ -9,7 +9,10 @@ public class PickAxe : MonoBehaviour
     [SerializeField] private float _speed;
     [SerializeField] private RotatorController _rotatorController;
     [SerializeField] private EnemyLevelController _enemyLevelController;
-    [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private AudioClip _audioClip;
+    
+    private AudioService _audioService;
+
     private int _strenght;
 
     private Transform _playerPosition;
@@ -20,18 +23,19 @@ public class PickAxe : MonoBehaviour
 
     public int Strenght => _strenght; 
 
-    public void Init(Transform transform, PlayerRotator playerRotator, EnemyLevelController enemyLevelController)
+    public void Init(Transform transform, PlayerRotator playerRotator, EnemyLevelController enemyLevelController, AudioService audioService)
     {
         _playerPosition = transform;
         _rotatorController.Init(playerRotator);
         _strenght = PlayerPrefs.GetInt("PickaxeStrenght");
         _enemyLevelController = enemyLevelController;
+        _audioService = audioService;
     }
 
     private void Start()
     {
         StartCoroutine(TeleportPlayer());
-        _audioSource.Play();
+        _audioService.PlaySound(_audioClip,true);
 
     }
 

@@ -7,7 +7,8 @@ public class PickaxeStrengthUI : MonoBehaviour
 {
 
     [SerializeField] private TextMeshProUGUI _text;
-    [SerializeField] private StrenghtSellPanel _sellPanel;
+    [SerializeField] private StrengthSellPanel _sellPanel;
+    [SerializeField] private string rewardID;
 
     private void Awake()
     {

@@ -7,18 +7,14 @@ public class LevelSpawner : MonoBehaviour
     [SerializeField] private List<Level> levels;
     [SerializeField] private Wallet _wallet;
     [SerializeField] private AudioService _audioService;
-
     [SerializeField] private int _currentLevelIndex=0;
+    [SerializeField] private LevelSpawner _levelSpawner;
 
     private Level _currentLevel;
     private WinPanel _winPanel;
     private LoosePanel _loosePanel;
     private GamePhase _gamePhase;
 
-    private void Awake()
-    {
-        
-    }
 
     private void Start()
     {
@@ -37,7 +33,7 @@ public class LevelSpawner : MonoBehaviour
 
     private void InstantiateLevel(Level level)
     {
-        level.Init(_wallet, _audioService, _gamePhase);
+        level.Init(_wallet, _audioService, _gamePhase, _levelSpawner);
         _winPanel = level.WinPanel;
         _loosePanel = level.LoosePanel;
         _winPanel.OnNextLevel += GoToNextLevel;
@@ -53,7 +49,7 @@ public class LevelSpawner : MonoBehaviour
         CreateLevel(_currentLevelIndex);
     }
 
-    private void RestartLevel()
+    public void RestartLevel()
     {
         Destroy(_currentLevel.gameObject);
         CreateLevel(_currentLevelIndex);

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -16,6 +17,8 @@ public class PlayerRotator : MonoBehaviour
     private bool _isTurningRight = true;
 
     private GamePhase _gamePhase;
+
+    private float epsilon = 0.0001f;
 
     public bool IsTurningRight=> _isTurningRight;
 
@@ -47,13 +50,14 @@ public class PlayerRotator : MonoBehaviour
 
         yRotation -= mouseY;
         yRotation = Mathf.Clamp(yRotation, 0f, 180f);
- 
-        if (yRotation > 30f & _isTurningRight)
+
+
+        if ( (yRotation-30f)> epsilon & _isTurningRight)
         {
             yRotation = 180f;
             _isTurningRight = false;
         }
-        else if(yRotation <= 150f & !_isTurningRight)
+        else if((yRotation - 150f) <= epsilon & !_isTurningRight)
         {
             yRotation = 0f;
             _isTurningRight = true;

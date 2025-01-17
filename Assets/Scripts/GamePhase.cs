@@ -14,6 +14,7 @@ public  class GamePhase
     {
         _isActive = true;
         _isPaused = false;
+        Time.timeScale = 1;
         Debug.Log("Game is active");
     }
 
@@ -21,6 +22,7 @@ public  class GamePhase
     {
         _isActive = false;
         _isPaused = true;
+        Time.timeScale = 0;
         Debug.Log("Game is paused");
     }
 

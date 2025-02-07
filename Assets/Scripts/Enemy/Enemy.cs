@@ -10,36 +10,21 @@ public class Enemy : MonoBehaviour
     [SerializeField] private ParticleSystem _effect;
     [SerializeField] private Rigidbody _rigidbody;
     [SerializeField] private Animator _animator;
-    [SerializeField] private DestroyableObstacle _obstacle;
+    [SerializeField] private AudioClip _fall;
+    [SerializeField] private AudioClip _death;
+
+    private AudioService _audioService;
+
+    private bool _isFalling = false;
 
     public  UnityEvent OnDeath;
 
-    private Wallet _wallet;
+    private bool _isSoundPlaying = false;
 
-
-    private void EnableGravity()
+    public void Init(AudioService audioService)
     {
-        _animator.SetTrigger("Fall");
-        _rigidbody.isKinematic = false;
-        _rigidbody.useGravity = true;
-        print("Gravity Enabled");
+        _audioService = audioService;
     }
-
-    private void OnEnable()
-    {
-        _obstacle.OnDestroy += EnableGravity;
-    }
-
-    private void OnDisable()
-    {
-        _obstacle.OnDestroy -= EnableGravity;
-    }
-
-    public void Init(Wallet wallet)
-    {
-        _wallet = wallet;
-    }
-
 
     private void InvokeTotalCountChangedWithDelay(float delay)
     {
@@ -48,36 +33,52 @@ public class Enemy : MonoBehaviour
 
     public void Die()
     {
+        _audioService.PlaySound(_death, false);
         InvokeTotalCountChangedWithDelay(3f);
         Instantiate(_effect, transform.position, transform.rotation);
         gameObject.SetActive(false);
         Instantiate(_deadEnemy, transform.position, transform.rotation);
-        Destroy(transform.parent.gameObject,3f);
+        Destroy(transform.parent.gameObject, 3f);
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.TryGetComponent(out PickAxe pickAxe))
         {
+            
             Die();
             pickAxe.Die();
         }
+    }
 
-        if (other.TryGetComponent(out Floor floor))
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(_isFalling)
         {
-            _rigidbody.useGravity = false;
             Die();
         }
     }
 
-
-
-    private void OnTriggerExit(Collider other)
+    private void Update()
     {
-        if(other.TryGetComponent(out DestroyableObstacle obstacle))
+        CreateRay();
+    }
+
+    private void CreateRay()
+    {
+        Vector3 startPosition = transform.position;
+
+        Vector3 direction = Vector3.down;
+        float distance = 2.0f;
+
+        Debug.DrawRay(startPosition, direction * distance, Color.red);
+
+        if (!Physics.Raycast(startPosition, direction, out RaycastHit hit, distance))
         {
-            _rigidbody.useGravity = true;
-            print("We are going down");
+            _animator.SetTrigger("Fall");
+            _isFalling = true;
+            PlayFallSound();
+            Debug.Log("No collision detected within 2 meter downwards.");
         }
     }
 
@@ -85,5 +86,19 @@ public class Enemy : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         OnDeath?.Invoke();
+    }
+
+    private void PlayFallSound()
+    {
+        if (_isSoundPlaying)
+        {
+            return;
+
+        }
+        else
+        {
+            _audioService.PlaySound(_fall, false);
+            _isSoundPlaying = true;
+        }
     }
 }

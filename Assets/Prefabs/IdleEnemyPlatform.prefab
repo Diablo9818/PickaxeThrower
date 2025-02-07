@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5370013973381809751, guid: 01c81815249e2dc4dbadbb976dc025ac, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.71
+      value: 0.726
       objectReference: {fileID: 0}
     - target: {fileID: 5370013973381809751, guid: 01c81815249e2dc4dbadbb976dc025ac, type: 3}
       propertyPath: m_LocalPosition.z
@@ -112,7 +112,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1943347200801055653, guid: ad835c39cd898f44fb4195ae55060429, type: 3}
       propertyPath: m_Name
-      value: MovingEnemyPlatform Variant
+      value: IdleEnemyPlatform
+      objectReference: {fileID: 0}
+    - target: {fileID: 9155679159694730702, guid: ad835c39cd898f44fb4195ae55060429, type: 3}
+      propertyPath: m_Size.y
+      value: 0.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 9155679159694730702, guid: ad835c39cd898f44fb4195ae55060429, type: 3}
+      propertyPath: m_Center.y
+      value: -0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

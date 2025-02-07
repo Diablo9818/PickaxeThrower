@@ -8,6 +8,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 322326448026938876, guid: 4c8b0ba0395eb65498142c3f5e265313, type: 3}
+      propertyPath: en
+      value: Level 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 322326448026938876, guid: 4c8b0ba0395eb65498142c3f5e265313, type: 3}
+      propertyPath: ru
+      value: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C 13"
+      objectReference: {fileID: 0}
+    - target: {fileID: 322326448026938876, guid: 4c8b0ba0395eb65498142c3f5e265313, type: 3}
+      propertyPath: tr
+      value: Seviye 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1474771751386554436, guid: 4c8b0ba0395eb65498142c3f5e265313, type: 3}
+      propertyPath: en
+      value: Level 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1474771751386554436, guid: 4c8b0ba0395eb65498142c3f5e265313, type: 3}
+      propertyPath: ru
+      value: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C 13"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1474771751386554436, guid: 4c8b0ba0395eb65498142c3f5e265313, type: 3}
+      propertyPath: tr
+      value: Seviye 13
+      objectReference: {fileID: 0}
     - target: {fileID: 2156389378703612037, guid: 4c8b0ba0395eb65498142c3f5e265313, type: 3}
       propertyPath: m_Name
       value: Level_13

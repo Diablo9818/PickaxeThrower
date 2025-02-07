@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2446924016054882249}
   - component: {fileID: 5967626487870635526}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: a0d71b7d065f04c428c65be205b32281, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -729,7 +729,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6941271c70a4c9b4f873115eb7e24183, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 2500
+  mouseSensitivity: 1000
   playerBody: {fileID: 5623141543803426201}
   arrow: {fileID: 4073909523591489519}
 --- !u!114 &7957416867350235019
@@ -750,6 +750,7 @@ MonoBehaviour:
   animator: {fileID: 2475477236269248139}
   playerRotator: {fileID: 9222387873444575229}
   arrow: {fileID: 4073909523591489519}
+  _enemyLevelController: {fileID: 0}
 --- !u!114 &1692505875133466477
 MonoBehaviour:
   m_ObjectHideFlags: 0

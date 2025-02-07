@@ -140,6 +140,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4772278122649123476, guid: 352af1f2536d82c4f9e62dee0104c74b, type: 3}
+      propertyPath: en
+      value: Level 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4772278122649123476, guid: 352af1f2536d82c4f9e62dee0104c74b, type: 3}
+      propertyPath: ru
+      value: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C 30"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4772278122649123476, guid: 352af1f2536d82c4f9e62dee0104c74b, type: 3}
+      propertyPath: tr
+      value: Seviye 30
+      objectReference: {fileID: 0}
     - target: {fileID: 8166045060416237424, guid: 352af1f2536d82c4f9e62dee0104c74b, type: 3}
       propertyPath: _price
       value: 108
@@ -187,6 +199,18 @@ PrefabInstance:
     - target: {fileID: 8599401201232228972, guid: 352af1f2536d82c4f9e62dee0104c74b, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9015490088995649809, guid: 352af1f2536d82c4f9e62dee0104c74b, type: 3}
+      propertyPath: en
+      value: Level 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 9015490088995649809, guid: 352af1f2536d82c4f9e62dee0104c74b, type: 3}
+      propertyPath: ru
+      value: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C 30"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9015490088995649809, guid: 352af1f2536d82c4f9e62dee0104c74b, type: 3}
+      propertyPath: tr
+      value: Seviye 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

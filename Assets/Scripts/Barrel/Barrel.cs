@@ -5,6 +5,8 @@ using UnityEngine;
 public class Barrel : MonoBehaviour
 {
     [SerializeField] private Exploder _exploder;
+    [SerializeField] private AudioClip _explosion;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.TryGetComponent(out PickAxe pickAxe))

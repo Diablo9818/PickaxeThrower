@@ -75,6 +75,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 381833097347531897, guid: 8867ae48afdfdea49959bc7f1956e41a, type: 3}
+      propertyPath: en
+      value: Level 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 381833097347531897, guid: 8867ae48afdfdea49959bc7f1956e41a, type: 3}
+      propertyPath: ru
+      value: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C 22"
+      objectReference: {fileID: 0}
+    - target: {fileID: 381833097347531897, guid: 8867ae48afdfdea49959bc7f1956e41a, type: 3}
+      propertyPath: tr
+      value: Seviye 22
+      objectReference: {fileID: 0}
     - target: {fileID: 925193417116613816, guid: 8867ae48afdfdea49959bc7f1956e41a, type: 3}
       propertyPath: m_Name
       value: Level_22
@@ -86,6 +98,18 @@ PrefabInstance:
     - target: {fileID: 1050268963523099250, guid: 8867ae48afdfdea49959bc7f1956e41a, type: 3}
       propertyPath: m_LocalPosition.z
       value: -3.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 1532024350261496257, guid: 8867ae48afdfdea49959bc7f1956e41a, type: 3}
+      propertyPath: en
+      value: Level 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1532024350261496257, guid: 8867ae48afdfdea49959bc7f1956e41a, type: 3}
+      propertyPath: ru
+      value: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C 22"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1532024350261496257, guid: 8867ae48afdfdea49959bc7f1956e41a, type: 3}
+      propertyPath: tr
+      value: Seviye 22
       objectReference: {fileID: 0}
     - target: {fileID: 3468114020219669633, guid: 8867ae48afdfdea49959bc7f1956e41a, type: 3}
       propertyPath: m_AnchorMax.y

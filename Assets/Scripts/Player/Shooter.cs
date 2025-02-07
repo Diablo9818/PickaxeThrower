@@ -9,16 +9,22 @@ public class Shooter : MonoBehaviour
     [SerializeField] private Transform spawnPoint;
     [SerializeField] private PickAxe projectilePrefab;
     [SerializeField] private Animator animator;
-     private int _pickAxeCount;
     [SerializeField] PlayerRotator playerRotator;
     [SerializeField] private GameObject arrow;
     [SerializeField] private EnemyLevelController _enemyLevelController;
 
+    private int _pickAxeCount;
+    private AudioService _audioService;
     public event UnityAction<int> TotalCountChanged;
     public delegate void TotalCountChangedDelegate(int count);
     public event UnityAction GameLoosed;
 
     public int PickAxeCount => _pickAxeCount;
+
+    public void Init(AudioService audioService)
+    {
+        _audioService = audioService;
+    }
 
     private void OnEnable()
     {
@@ -46,7 +52,7 @@ public class Shooter : MonoBehaviour
     public void Shoot()
     {
         var projectile = GameObject.Instantiate(projectilePrefab, spawnPoint.position, Quaternion.identity);
-        projectile.Init(transform, playerRotator, _enemyLevelController);
+        projectile.Init(transform, playerRotator, _enemyLevelController,_audioService);
         projectile.SetDirection(transform.forward);
         _cameraFollow.ChangeTarget(projectile.transform);
     }

@@ -14,11 +14,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 786493523240856258, guid: d8bb379771dcd7043bdad93ebc4201b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 26.28
+      value: 26.354
       objectReference: {fileID: 0}
     - target: {fileID: 786493523240856258, guid: d8bb379771dcd7043bdad93ebc4201b4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.93
+      value: 0.44
       objectReference: {fileID: 0}
     - target: {fileID: 1792605340330168703, guid: d8bb379771dcd7043bdad93ebc4201b4, type: 3}
       propertyPath: m_text
@@ -26,7 +26,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1847369531893687889, guid: d8bb379771dcd7043bdad93ebc4201b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.03
+      value: 12.09
       objectReference: {fileID: 0}
     - target: {fileID: 1950830848228899743, guid: d8bb379771dcd7043bdad93ebc4201b4, type: 3}
       propertyPath: _price
@@ -79,6 +79,30 @@ PrefabInstance:
     - target: {fileID: 2441462135256078010, guid: d8bb379771dcd7043bdad93ebc4201b4, type: 3}
       propertyPath: m_Name
       value: Level_7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917111342393568891, guid: d8bb379771dcd7043bdad93ebc4201b4, type: 3}
+      propertyPath: en
+      value: Level 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917111342393568891, guid: d8bb379771dcd7043bdad93ebc4201b4, type: 3}
+      propertyPath: ru
+      value: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C 7"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917111342393568891, guid: d8bb379771dcd7043bdad93ebc4201b4, type: 3}
+      propertyPath: tr
+      value: Seviye 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4068433151034614723, guid: d8bb379771dcd7043bdad93ebc4201b4, type: 3}
+      propertyPath: en
+      value: Level 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4068433151034614723, guid: d8bb379771dcd7043bdad93ebc4201b4, type: 3}
+      propertyPath: ru
+      value: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C 7"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4068433151034614723, guid: d8bb379771dcd7043bdad93ebc4201b4, type: 3}
+      propertyPath: tr
+      value: Seviye 7
       objectReference: {fileID: 0}
     - target: {fileID: 4349387928987606667, guid: d8bb379771dcd7043bdad93ebc4201b4, type: 3}
       propertyPath: _obstacle
@@ -178,7 +202,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6095343358414684758, guid: d8bb379771dcd7043bdad93ebc4201b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.2
+      value: 6.24
       objectReference: {fileID: 0}
     - target: {fileID: 6099335391365882112, guid: d8bb379771dcd7043bdad93ebc4201b4, type: 3}
       propertyPath: m_AnchorMax.y

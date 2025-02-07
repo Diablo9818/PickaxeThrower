@@ -13,6 +13,7 @@ public class Wallet_UI : MonoBehaviour
         _wallet = wallet;
         _text.text = _wallet.Coins.ToString();
         _wallet.TotalCoinsChanged += UpdateCounterText;
+        Debug.Log("waleet has been inicialized");
     }
 
     private void OnDisable()

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class WinPanel : MonoBehaviour
@@ -28,7 +29,7 @@ public class WinPanel : MonoBehaviour
 
     private void QuitGame()
     {
-        Application.Quit();
+        SceneManager.LoadScene("Menu");
     }
 
     private void GoToNextLevel()

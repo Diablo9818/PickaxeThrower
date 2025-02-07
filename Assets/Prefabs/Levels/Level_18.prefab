@@ -84,6 +84,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 2645233505902775272, guid: 02acb8d8340d5744f8cf2866078c6b9a, type: 3}
+      propertyPath: en
+      value: Level 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645233505902775272, guid: 02acb8d8340d5744f8cf2866078c6b9a, type: 3}
+      propertyPath: ru
+      value: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C 18"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645233505902775272, guid: 02acb8d8340d5744f8cf2866078c6b9a, type: 3}
+      propertyPath: tr
+      value: Seviye 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 3799792276704396880, guid: 02acb8d8340d5744f8cf2866078c6b9a, type: 3}
+      propertyPath: en
+      value: Level 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 3799792276704396880, guid: 02acb8d8340d5744f8cf2866078c6b9a, type: 3}
+      propertyPath: ru
+      value: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C 18"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3799792276704396880, guid: 02acb8d8340d5744f8cf2866078c6b9a, type: 3}
+      propertyPath: tr
+      value: Seviye 18
+      objectReference: {fileID: 0}
     - target: {fileID: 4405060701989502609, guid: 02acb8d8340d5744f8cf2866078c6b9a, type: 3}
       propertyPath: m_Name
       value: Level_18

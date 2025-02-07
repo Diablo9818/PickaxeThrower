@@ -9,6 +9,7 @@ public class Exploder : MonoBehaviour
     [SerializeField] private Transform _spawnPoint;
     [SerializeField] private ParticleSystem _effect;
 
+
     public float ExplosionRadius => _explosionRadius;
 
     public float ExplosionForce => _explosionForce;

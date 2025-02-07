@@ -270,6 +270,30 @@ PrefabInstance:
       propertyPath: _bossHealth
       value: 
       objectReference: {fileID: 3993992340215476313}
+    - target: {fileID: 2075478423491445545, guid: b7cfc52eee45b47438301b4ff5e6c925, type: 3}
+      propertyPath: en
+      value: Level 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2075478423491445545, guid: b7cfc52eee45b47438301b4ff5e6c925, type: 3}
+      propertyPath: ru
+      value: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C 25"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2075478423491445545, guid: b7cfc52eee45b47438301b4ff5e6c925, type: 3}
+      propertyPath: tr
+      value: Seviye 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587996880672620716, guid: b7cfc52eee45b47438301b4ff5e6c925, type: 3}
+      propertyPath: en
+      value: Level 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587996880672620716, guid: b7cfc52eee45b47438301b4ff5e6c925, type: 3}
+      propertyPath: ru
+      value: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C 25"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587996880672620716, guid: b7cfc52eee45b47438301b4ff5e6c925, type: 3}
+      propertyPath: tr
+      value: Seviye 25
+      objectReference: {fileID: 0}
     - target: {fileID: 2999442291583584519, guid: b7cfc52eee45b47438301b4ff5e6c925, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

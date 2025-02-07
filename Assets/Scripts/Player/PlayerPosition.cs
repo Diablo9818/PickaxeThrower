@@ -6,7 +6,8 @@ public class PlayerPosition : MonoBehaviour
 {
     [SerializeField] private PlayerController _controller;
     [SerializeField] private EnemyLevelController _enemyLevelController;
-    [SerializeField] private Camera _camera;
+    [SerializeField] private Camera _bossCamera;
+    [SerializeField] private Camera _currentCamera;
     [SerializeField] Vector3 _cameraPosition;
 
 
@@ -23,6 +24,7 @@ public class PlayerPosition : MonoBehaviour
     private void SetPlayerPosition()
     {
         _controller.transform.position = transform.position;
-        _camera.gameObject.SetActive(true);
+        _bossCamera.gameObject.SetActive(true);
+        _currentCamera.gameObject.SetActive(false);
     }
 }

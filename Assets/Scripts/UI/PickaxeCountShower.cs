@@ -23,7 +23,7 @@ public class PickaxeCountShower : MonoBehaviour
         _shooter.TotalCountChanged -= UpdateCounterText;
     }
 
-    void UpdateCounterText(int count)
+    private void UpdateCounterText(int count)
     {
         _text.text = count.ToString();
     }

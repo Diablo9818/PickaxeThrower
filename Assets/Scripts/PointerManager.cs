@@ -9,11 +9,19 @@ public class PointerManager : MonoBehaviour {
     [SerializeField] Camera _camera;
 
     private Dictionary<EnemyPointer, PointerIcon> _dictionary = new Dictionary<EnemyPointer, PointerIcon>();
+    private GamePhase _gamePhase;
+
+    public void Init(GamePhase gamePhase)
+    {
+        _gamePhase = gamePhase;
+    }
 
 
 
-    public void AddToList(EnemyPointer enemyPointer) {
+    public void AddToList(EnemyPointer enemyPointer) 
+    {
         PointerIcon newPointer = Instantiate(_pointerPrefab, transform);
+        newPointer.Init(_gamePhase);
         _dictionary.Add(enemyPointer, newPointer);
         Debug.Log("Enemy added!");
     }

@@ -2,25 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class GamePhase
+public  class GamePhase
 {
-    private static bool _isPaused;
-    private static bool _isActive;
+    private  bool _isPaused;
+    private  bool _isActive;
 
-    public static bool IsPaused=> _isPaused;
-    public static bool IsActive => _isActive;
+    public  bool IsPaused=> _isPaused;
+    public bool IsActive => _isActive;
 
-    public static void Activate()
+    public void Activate()
     {
         _isActive = true;
         _isPaused = false;
+        //Time.timeScale = 1;
         Debug.Log("Game is active");
     }
 
-    public static void Pause()
+    public  void Pause()
     {
         _isActive = false;
         _isPaused = true;
+        //Time.timeScale = 0;
         Debug.Log("Game is paused");
     }
 

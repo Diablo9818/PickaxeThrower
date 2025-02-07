@@ -9,6 +9,8 @@ public class EnemyLevelController : MonoBehaviour
     [SerializeField] private bool _isBossHere;
     [SerializeField] private bool _isBossEnabled;
     [SerializeField] private Boss _boss;
+    [SerializeField] private List<Enemy> _enemies;
+
     public event UnityAction GameWin;
 
     public event UnityAction<int> TotalCountChanged;
@@ -18,6 +20,19 @@ public class EnemyLevelController : MonoBehaviour
     public bool IsBossEnabled => _isBossEnabled;
 
     public int TotalEnemy;
+
+    public void Init(AudioService audioService, bool isOrientationPortrait)
+    {
+        foreach (var enemy in _enemies)
+        {
+            enemy.Init(audioService);
+        }
+
+        if (_isBossHere)
+        {
+            _boss.Init(isOrientationPortrait);
+        }
+    }
 
     private void Awake()
     {

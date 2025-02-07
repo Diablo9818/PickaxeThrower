@@ -10,11 +10,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 632053224648654223, guid: 2f22ed10a065a954ea13447482e67b0a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 18.73
+      value: 25.82
       objectReference: {fileID: 0}
     - target: {fileID: 632053224648654223, guid: 2f22ed10a065a954ea13447482e67b0a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 22.87
+      value: 49.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 632053224648654223, guid: 2f22ed10a065a954ea13447482e67b0a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 632053224648654223, guid: 2f22ed10a065a954ea13447482e67b0a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 632053224648654223, guid: 2f22ed10a065a954ea13447482e67b0a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 835727412299685323, guid: 2f22ed10a065a954ea13447482e67b0a, type: 3}
       propertyPath: m_AnchorMax.y
@@ -195,6 +207,30 @@ PrefabInstance:
     - target: {fileID: 7136466417276169871, guid: 2f22ed10a065a954ea13447482e67b0a, type: 3}
       propertyPath: m_Name
       value: Level_14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7679670674815768142, guid: 2f22ed10a065a954ea13447482e67b0a, type: 3}
+      propertyPath: en
+      value: Level 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7679670674815768142, guid: 2f22ed10a065a954ea13447482e67b0a, type: 3}
+      propertyPath: ru
+      value: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C 14"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7679670674815768142, guid: 2f22ed10a065a954ea13447482e67b0a, type: 3}
+      propertyPath: tr
+      value: Seviye 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835491685029256182, guid: 2f22ed10a065a954ea13447482e67b0a, type: 3}
+      propertyPath: en
+      value: Level 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835491685029256182, guid: 2f22ed10a065a954ea13447482e67b0a, type: 3}
+      propertyPath: ru
+      value: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C 14"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835491685029256182, guid: 2f22ed10a065a954ea13447482e67b0a, type: 3}
+      propertyPath: tr
+      value: Seviye 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

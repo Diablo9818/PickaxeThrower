@@ -9,9 +9,16 @@ public class Menu_UI : MonoBehaviour
     [SerializeField] private Button _playButton;
     [SerializeField] private Canvas Menu;
     [SerializeField] private Canvas Game;
+    [SerializeField] private Wallet_UI _walletUI;
     public event UnityAction OnGameStarted;
 
+    private GamePhase _gamePhase;
 
+    public void Init(GamePhase gamePhase,Wallet wallet)
+    {
+        _gamePhase = gamePhase;
+        _walletUI.Init(wallet);
+    }
     private void OnEnable()
     {
         _playButton.onClick.AddListener(StartGame);
@@ -23,6 +30,6 @@ public class Menu_UI : MonoBehaviour
         Game.gameObject.SetActive(true);
 
         OnGameStarted?.Invoke();
-        GamePhase.Activate();
+        _gamePhase.Activate();
     }
 }

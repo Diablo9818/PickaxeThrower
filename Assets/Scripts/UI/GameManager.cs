@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private Shooter _shooter;
     [SerializeField] private EnemyLevelController _enemyLevelController;
+    [SerializeField] private LevelSpawner _levelSpawner;
 
     [SerializeField] protected Level_UI _levelUI;
 
@@ -26,6 +27,11 @@ public class GameManager : MonoBehaviour
         _enemyLevelController.GameWin -= ShowWinWindow;
     }
 
+    public void Init(LevelSpawner levelSpawner)
+    {
+        _levelSpawner = levelSpawner;
+    }
+
     private void ShowLoseWindow()
     {
         _levelUI.ShowLoseWindow();
@@ -35,6 +41,7 @@ public class GameManager : MonoBehaviour
     protected void ShowWinWindow()
     {
         _levelUI.ShowWinWindow();
+        _levelSpawner.UpdateLevelIndex();
     }
 
 }

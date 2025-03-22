@@ -1,0 +1,40 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
+public class WinPanel : MonoBehaviour
+{
+    [SerializeField] private Button _nextLevelButton;
+    [SerializeField] private Button _quitButton;
+
+    private LevelSpawner _levelSpawner;
+
+
+    public void Init(LevelSpawner levelSpawner)
+    {
+        _levelSpawner = levelSpawner;
+        
+        _nextLevelButton.onClick.AddListener(GoToNextLevel);
+        _quitButton.onClick.AddListener(QuitGame);
+    }
+    
+    private void OnDisable()
+    {
+        _nextLevelButton.onClick.RemoveListener(GoToNextLevel);
+        _quitButton.onClick.RemoveListener(QuitGame);
+    }
+
+    private void QuitGame()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+
+    private void GoToNextLevel()
+    {
+        _levelSpawner.GoToNextLevel();
+    }
+}

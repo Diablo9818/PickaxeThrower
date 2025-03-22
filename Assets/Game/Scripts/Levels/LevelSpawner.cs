@@ -44,13 +44,13 @@ public class LevelSpawner : MonoBehaviour
 
     private void InitializeLevel(Level level)
     {
-        level.Init(_wallet, _audioService, _gamePhase, _levelSpawner, _isOrientationPortrait);
+        level.Init(_wallet, _audioService, _gamePhase, _levelSpawner, _isOrientationPortrait, _currentLevelIndex + 1);
     }
 
     public void GoToNextLevel()
     {
         Destroy(_currentLevel.gameObject);
-        //_currentLevelIndex++;
+        _currentLevelIndex++;
         //PlayerPrefs.SetInt("CurrentLevel", _currentLevelIndex);
 
         if (_currentLevelIndex % 4 == 0)

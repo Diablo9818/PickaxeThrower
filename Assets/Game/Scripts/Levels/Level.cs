@@ -13,9 +13,9 @@ public class Level : MonoBehaviour
     private Menu_UI _menu_UI;
     private Level_UI _levelUI;
 
-    public void Init(Wallet wallet, AudioService audioService, GamePhase gamePhase, LevelSpawner levelSpawner, bool isOrientationPortrait)
+    public void Init(Wallet wallet, AudioService audioService, GamePhase gamePhase, LevelSpawner levelSpawner, bool isOrientationPortrait, int levelNumber)
     {
-        _uiFabric.Init(wallet, gamePhase, isOrientationPortrait);
+        _uiFabric.Init(wallet, gamePhase, isOrientationPortrait, levelNumber);
         _menu_UI = _uiFabric.CreateMenuUI();
         _menu_UI.OnGameStarted += SpawnPlayer;
         _walletManager.Init(wallet);

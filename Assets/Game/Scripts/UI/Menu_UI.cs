@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -13,17 +14,19 @@ public class Menu_UI : MonoBehaviour
     [SerializeField] private Wallet_UI _walletUI;
     [SerializeField] private PickaxeSellPanel _pickaxeSellPanel;
     [SerializeField] private StrengthSellPanel _strengthSellPanel;
+    [SerializeField] private TextMeshProUGUI _levelText;
 
     public event Action OnGameStarted;
 
     private GamePhase _gamePhase;
 
-    public void Init(GamePhase gamePhase,Wallet wallet)
+    public void Init(GamePhase gamePhase,Wallet wallet, int levelNumber)
     {
         _gamePhase = gamePhase;
         _walletUI.Init(wallet);
         _strengthSellPanel.Init(wallet);
         _pickaxeSellPanel.Init(wallet);
+        _levelText.text = levelNumber.ToString();
     }
     private void OnEnable()
     {

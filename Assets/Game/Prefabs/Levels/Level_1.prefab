@@ -733,6 +733,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemySpawner (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4550422441756356677, guid: d414ff1ef97a6054398b0b192aa97771, type: 3}
+      propertyPath: _idlePlatform
+      value: 
+      objectReference: {fileID: 986554042461156199, guid: 14da3b42c47565143a834ea2807ec4e7, type: 3}
+    - target: {fileID: 4550422441756356677, guid: d414ff1ef97a6054398b0b192aa97771, type: 3}
+      propertyPath: _movingPlatform
+      value: 
+      objectReference: {fileID: 5496821192595245957, guid: ad835c39cd898f44fb4195ae55060429, type: 3}
     - target: {fileID: 5492783786171578675, guid: d414ff1ef97a6054398b0b192aa97771, type: 3}
       propertyPath: m_LocalPosition.x
       value: 62.55171

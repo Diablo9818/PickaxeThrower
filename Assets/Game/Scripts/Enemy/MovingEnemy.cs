@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class MovingEnemy : DamagablePerson, IEnemy
 {
-    [SerializeField] private EnemyLevelController _enemyLevelController;
+    [SerializeField] private Enemy _enemy;
+    private EnemyLevelController _enemyLevelController;
 
-    public void Init(EnemyLevelController enemyLevelController)
+    public void Init(AudioService audioService, PointerManager pointerManager, EnemyLevelController enemyLevelController)
     {
+        _enemy.Init(audioService, pointerManager);
         _enemyLevelController = enemyLevelController;
     }
 

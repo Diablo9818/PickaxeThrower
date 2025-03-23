@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class EnemyFactory : AbstractFactory
 {
-    [SerializeField] private IdleEnemyPlatform _platform;
+    [SerializeField] private IdleEnemyPlatform _idlePlatform;
+    [SerializeField] private MovingEnemyPlatform _movingPlatform;
     [SerializeField] private EnemyLevelController _enemyLevelController;
 
     private AudioService _audioService;
@@ -18,14 +19,18 @@ public class EnemyFactory : AbstractFactory
 
     public override void CreateIdleEnemyPlatform(Transform transform)
     {
-        IdleEnemyPlatform platform = Instantiate(_platform, transform);
+        IdleEnemyPlatform platform = Instantiate(_idlePlatform, transform);
         platform.transform.SetParent(transform);
         platform.transform.localPosition = Vector3.zero;
         platform.Init(_audioService, _pointerManager, _enemyLevelController);
     }
 
-    public override IEnemyPlatform CreateMovingEnemyPlatform()
+    public override void CreateMovingEnemyPlatform(Transform transform)
     {
-        return Instantiate(_platform, transform);
+        MovingEnemyPlatform platform = Instantiate(_movingPlatform, transform);
+        platform.transform.SetParent(transform);
+        platform.transform.localPosition = Vector3.zero;
+        platform.Init(_audioService, _pointerManager, _enemyLevelController);
+  
     }
 }

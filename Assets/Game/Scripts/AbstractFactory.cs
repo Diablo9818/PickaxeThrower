@@ -6,5 +6,6 @@ public abstract class AbstractFactory:MonoBehaviour
 {
     public abstract void CreateIdleEnemyPlatform(Transform transform);
 
-    public abstract IEnemyPlatform CreateMovingEnemyPlatform();
+    public abstract void CreateMovingEnemyPlatform(Transform transform);
+    
 }

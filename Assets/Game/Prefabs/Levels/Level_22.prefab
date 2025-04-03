@@ -163,6 +163,10 @@ PrefabInstance:
       propertyPath: _price
       value: 69
       objectReference: {fileID: 0}
+    - target: {fileID: 5778840586298591481, guid: 8867ae48afdfdea49959bc7f1956e41a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6968342218956546673, guid: 8867ae48afdfdea49959bc7f1956e41a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -62.272125

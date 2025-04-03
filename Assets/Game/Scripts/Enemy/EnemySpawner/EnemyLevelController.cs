@@ -9,6 +9,7 @@ public class EnemyLevelController : MonoBehaviour
     [SerializeField] private bool _isBossEnabled;
     [SerializeField] private Boss _boss;
     [SerializeField] private List<EnemySpawnPoint> _enemiesSpawnPoints;
+    [SerializeField] private List<MovingEnemySpawnPoint> _movingEnemiesSpawnPoints;
     [SerializeField] private EnemyFactory _enemyFactory;
 
     private Level_UI _levelUI;
@@ -26,11 +27,20 @@ public class EnemyLevelController : MonoBehaviour
 
     public void Init(AudioService audioService, PointerManager pointerManager, bool isOrientationPortrait)
     {
+        TotalEnemy = _enemiesSpawnPoints.Count + _movingEnemiesSpawnPoints.Count;
         _enemyFactory.Init(audioService, pointerManager);
 
         for (int i = 0; i < _enemiesSpawnPoints.Count; i++)
         {
             _enemyFactory.CreateIdleEnemyPlatform(_enemiesSpawnPoints[i].transform);
+        }
+
+        if (_movingEnemiesSpawnPoints.Count > 0)
+        {
+            for (int i = 0; i < _movingEnemiesSpawnPoints.Count; i++)
+            {
+                _enemyFactory.CreateMovingEnemyPlatform(_movingEnemiesSpawnPoints[i].transform);
+            }
         }
 
         if (_isBossHere)

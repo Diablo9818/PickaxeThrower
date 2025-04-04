@@ -6,18 +6,31 @@ using UnityEngine.UI;
 [RequireComponent(typeof(BossHealth))]
 public class BossHealthUI : MonoBehaviour
 {
-    [SerializeField] private Slider _healthSlider;
+    [SerializeField] private Slider _healthSliderPortrait;
+    [SerializeField] private Slider _healthSliderAlbom;
     [SerializeField] private float _sliderChangedSpeed;
     [SerializeField] private BossHealth _bossHealth;
     private Coroutine _coroutine;
+    
+    private Slider _healthSlider;
 
-    private void Start()
+    public void Initialize(bool isOrientationPortrait)
     {
+        if (isOrientationPortrait)
+        {
+            _healthSlider = _healthSliderPortrait;
+        }
+        else
+        {
+            _healthSlider = _healthSliderAlbom;
+        }
+        
         _healthSlider.maxValue = _bossHealth.GetCurrentHealth();
         _healthSlider.value = _healthSlider.maxValue;
-        _bossHealth.OnHealthChanged += UpdateSlider;
+        _bossHealth.OnHealthChanged += UpdateSlider;  
     }
 
+    
     private void OnDestroy()
     {
         _bossHealth.OnHealthChanged -= UpdateSlider;

@@ -8,13 +8,17 @@ public class Boss : MonoBehaviour
     [SerializeField] private Canvas _albumBossHealthUI;
     [SerializeField] private BossHealth _bossHealth;
     [SerializeField] private EnemyLevelController _enemyLevelController;
+    [SerializeField] private BossHealthUI _bossHealthUI;
+
 
     private bool _isOrientationPortrait;
-    private Canvas _bossHealthUI;
+    private Canvas _bossHealthCanvas;
 
-    public void Init(bool isOrientationPortrait)
+    public void Init(bool isOrientationPortrait, Level_UI levelUI)
     {
         _isOrientationPortrait = isOrientationPortrait;
+        _bossHealth.Initialize(levelUI);
+        _bossHealthUI.Initialize(isOrientationPortrait);
     }
 
     private void OnEnable()
@@ -24,11 +28,11 @@ public class Boss : MonoBehaviour
 
         if (_isOrientationPortrait)
         {
-            _bossHealthUI = _portraitBossHealthUI;
+            _bossHealthCanvas = _portraitBossHealthUI;
         }
         else
         {
-            _bossHealthUI = _albumBossHealthUI;
+            _bossHealthCanvas = _albumBossHealthUI;
         }
     }
 
@@ -40,11 +44,11 @@ public class Boss : MonoBehaviour
 
     private void ShowHealth()
     {
-        _bossHealthUI.gameObject.SetActive(true);
+        _bossHealthCanvas.gameObject.SetActive(true);
     }
 
     private void HideHealth()
     {
-        _bossHealthUI.gameObject.SetActive(false);
+        _bossHealthCanvas.gameObject.SetActive(false);
     }
 }

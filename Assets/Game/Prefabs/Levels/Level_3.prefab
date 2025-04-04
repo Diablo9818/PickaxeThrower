@@ -22,11 +22,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8795775127844834676, guid: f5560b439975ddf409ea23d3253875fd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 14.01
+      value: 7.93
       objectReference: {fileID: 0}
     - target: {fileID: 8795775127844834676, guid: f5560b439975ddf409ea23d3253875fd, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8795775127844834676, guid: f5560b439975ddf409ea23d3253875fd, type: 3}
       propertyPath: m_LocalRotation.x
@@ -34,7 +34,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8795775127844834676, guid: f5560b439975ddf409ea23d3253875fd, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8795775127844834676, guid: f5560b439975ddf409ea23d3253875fd, type: 3}
       propertyPath: m_LocalRotation.z
@@ -46,7 +46,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8795775127844834676, guid: f5560b439975ddf409ea23d3253875fd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8795775127844834676, guid: f5560b439975ddf409ea23d3253875fd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -129,10 +129,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 159110542693508157, guid: afd203be9445e5d46a37ee4adcecbfe0, type: 3}
-      propertyPath: _pointerManager
-      value: 
-      objectReference: {fileID: 8151307745835626207}
     - target: {fileID: 355167401309083406, guid: afd203be9445e5d46a37ee4adcecbfe0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -62.272125
@@ -309,6 +305,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5763534155208136531, guid: afd203be9445e5d46a37ee4adcecbfe0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.28
+      objectReference: {fileID: 0}
     - target: {fileID: 5876907136332271106, guid: afd203be9445e5d46a37ee4adcecbfe0, type: 3}
       propertyPath: m_text
       value: Level 3
@@ -385,6 +385,14 @@ PrefabInstance:
       propertyPath: tr
       value: Seviye 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8539185147167158903, guid: afd203be9445e5d46a37ee4adcecbfe0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 14.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 9017270974990735194, guid: afd203be9445e5d46a37ee4adcecbfe0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.26
+      objectReference: {fileID: 0}
     - target: {fileID: 9068486983456769007, guid: afd203be9445e5d46a37ee4adcecbfe0, type: 3}
       propertyPath: _enemyCount
       value: 4
@@ -397,7 +405,7 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 355167401309083406, guid: afd203be9445e5d46a37ee4adcecbfe0, type: 3}
-      insertIndex: 12
+      insertIndex: -1
       addedObject: {fileID: 6979999121292375550}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afd203be9445e5d46a37ee4adcecbfe0, type: 3}
@@ -406,14 +414,3 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 355167401309083406, guid: afd203be9445e5d46a37ee4adcecbfe0, type: 3}
   m_PrefabInstance: {fileID: 3173581598891023088}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8151307745835626207 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6707426182397277231, guid: afd203be9445e5d46a37ee4adcecbfe0, type: 3}
-  m_PrefabInstance: {fileID: 3173581598891023088}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40098cf151c1c7a48ae91c00d9213398, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

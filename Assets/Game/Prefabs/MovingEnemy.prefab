@@ -262,7 +262,7 @@ MonoBehaviour:
   _animator: {fileID: 5545159963339831089}
   _fall: {fileID: 8300000, guid: cec23520d4b227f4a8cfbe93e1d0201a, type: 3}
   _death: {fileID: 8300000, guid: 8bd854b6bf0b7ae4c9054bf10cb74103, type: 3}
-  _enemyPointer: {fileID: 0}
+  _enemyPointer: {fileID: 4630578140045082046}
   OnDeath:
     m_PersistentCalls:
       m_Calls:

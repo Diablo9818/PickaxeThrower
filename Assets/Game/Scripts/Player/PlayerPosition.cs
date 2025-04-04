@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class PlayerPosition : MonoBehaviour
 {
-    [SerializeField] private PlayerController _controller;
     [SerializeField] private EnemyLevelController _enemyLevelController;
     [SerializeField] private Camera _bossCamera;
-    [SerializeField] private Camera _currentCamera;
     [SerializeField] Vector3 _cameraPosition;
-
-
+    
+    private Camera _currentCamera;
+    private PlayerController _controller;
+    
+    public void Init(PlayerController controller)
+    {
+        _controller = controller;
+        _currentCamera = Camera.main;
+    }
     private void OnEnable()
     {
         _enemyLevelController.OnBossFight += SetPlayerPosition;

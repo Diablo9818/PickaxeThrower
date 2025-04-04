@@ -25,9 +25,10 @@ public class EnemyLevelController : MonoBehaviour
 
     public int TotalEnemy;
 
-    public void Init(AudioService audioService, PointerManager pointerManager, bool isOrientationPortrait)
+    public void Init(AudioService audioService, PointerManager pointerManager)
     {
         TotalEnemy = _enemiesSpawnPoints.Count + _movingEnemiesSpawnPoints.Count;
+        _enemyCount = _enemiesSpawnPoints.Count + _movingEnemiesSpawnPoints.Count;  
         _enemyFactory.Init(audioService, pointerManager);
 
         for (int i = 0; i < _enemiesSpawnPoints.Count; i++)
@@ -42,24 +43,18 @@ public class EnemyLevelController : MonoBehaviour
                 _enemyFactory.CreateMovingEnemyPlatform(_movingEnemiesSpawnPoints[i].transform);
             }
         }
+    }
 
-        if (_isBossHere)
-        {
-            _boss.Init(isOrientationPortrait);
-        }
+    public void InitBoss( bool isOrientationPortrait, Level_UI levelUI)
+    {
+        _boss.Init(isOrientationPortrait, levelUI);
     }
 
     public void SetLevelUI(Level_UI level_UI)
     {
         _levelUI = level_UI;
     }
-
-    private void Awake()
-    {
-        _enemyCount = _enemiesSpawnPoints.Count;
-    }
-
-
+    
     public virtual void DecreaseEnemyCount()
     {
         _enemyCount--;

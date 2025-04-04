@@ -10,14 +10,11 @@ public class EnemyPointer : MonoBehaviour
     public void Init(PointerManager pointerManager)
     {
         _pointerManager = pointerManager;
-    }
-
-    private void Start()
-    {
+        
         _pointerManager.AddToList(this);
         _enemy.OnDeath.AddListener(Destroy);
     }
-
+    
     private void OnDestroy()
     {
         _pointerManager.RemoveFromList(this);

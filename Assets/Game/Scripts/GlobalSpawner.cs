@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class GlobalSpawner : MonoBehaviour
 {
-    [SerializeField] private PlayerSpawner _playerSpawner;
-    [SerializeField] private PointManagerFabric _pointManagerFabric;
-    [SerializeField] private EnemyLevelController _enemyLevelController;
-    [SerializeField] private UILevelFabric _uiLevelFabric;
+    [SerializeField] protected PlayerSpawner _playerSpawner;
+    [SerializeField] protected PointManagerFabric _pointManagerFabric;
+    [SerializeField] protected EnemyLevelController _enemyLevelController;
+    [SerializeField] protected UILevelFabric _uiLevelFabric;
 
-    private GamePhase _gamePhase;
-    private AudioService _audioService;
-    private bool _isOrientationPortrait;
-    private LevelSpawner _levelSpawner;
+    protected GamePhase _gamePhase;
+    protected AudioService _audioService;
+    protected bool _isOrientationPortrait;
+    protected LevelSpawner _levelSpawner;
 
     public void Init(GamePhase gamePhase, AudioService audioService, bool isOrientationPortrait, LevelSpawner levelSpawner)
     {
@@ -22,7 +22,7 @@ public class GlobalSpawner : MonoBehaviour
         _levelSpawner = levelSpawner;
     }
 
-    public void Spawn()
+    public virtual void Spawn()
     {
         _playerSpawner.Init(_gamePhase, _audioService);
         PlayerController player = _playerSpawner.Spawn();
@@ -30,7 +30,7 @@ public class GlobalSpawner : MonoBehaviour
         _pointManagerFabric.Init(_gamePhase, player.transform);
         PointerManager pointerManager = _pointManagerFabric.CreatePointManager();
 
-        _enemyLevelController.Init(_audioService, pointerManager, _isOrientationPortrait);
+        _enemyLevelController.Init(_audioService, pointerManager);
         
         _uiLevelFabric.Init(_audioService, _gamePhase, _isOrientationPortrait,_levelSpawner, _enemyLevelController, player.Shooter);
         Level_UI level_UI = _uiLevelFabric.CreateLevelUI();

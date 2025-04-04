@@ -7,9 +7,15 @@ using UnityEngine.UI;
 public class BossHealth : MonoBehaviour
 {
     [SerializeField] private int _health;
+    private Level_UI _levelUI;
     public event UnityAction<float> OnHealthChanged;
     public event UnityAction OnBossDied;
 
+    public void Initialize(Level_UI levelUI)
+    {
+       _levelUI = levelUI; 
+    }
+    
     public int GetCurrentHealth()
     {
         return _health;
@@ -40,6 +46,7 @@ public class BossHealth : MonoBehaviour
     {
         OnBossDied?.Invoke();
         Destroy(gameObject);
+        _levelUI.ShowWinWindow();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -47,6 +54,7 @@ public class BossHealth : MonoBehaviour
         if(other.TryGetComponent(out PickAxe pickAxe))
         {
             TakeDamage(pickAxe.Strenght);
+            Debug.Log("Enemy Shooted.pickaxe Strength= "+pickAxe.Strenght);
             pickAxe.Die();
         }
     }

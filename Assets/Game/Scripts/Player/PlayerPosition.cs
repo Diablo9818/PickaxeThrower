@@ -24,6 +24,7 @@ public class PlayerPosition : MonoBehaviour
     private void OnDestroy()
     {
         _enemyLevelController.OnBossFight -= SetPlayerPosition;
+        _currentCamera.gameObject.SetActive(true);
     }
 
     private void SetPlayerPosition()

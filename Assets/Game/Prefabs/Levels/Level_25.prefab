@@ -255,7 +255,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 740dc6608bdbcf84c8d425f9843a6f74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _healthSlider: {fileID: 909933218377900737}
+  _healthSliderPortrait: {fileID: 909933218377900737}
+  _healthSliderAlbom: {fileID: 4561739806715885295}
   _sliderChangedSpeed: 1
   _bossHealth: {fileID: 3993992340215476313}
 --- !u!1001 &6842970095231990205
@@ -270,6 +271,10 @@ PrefabInstance:
       propertyPath: _bossHealth
       value: 
       objectReference: {fileID: 3993992340215476313}
+    - target: {fileID: 1545433324616969348, guid: b7cfc52eee45b47438301b4ff5e6c925, type: 3}
+      propertyPath: _bossHealthUI
+      value: 
+      objectReference: {fileID: 5733935233502139482}
     - target: {fileID: 2075478423491445545, guid: b7cfc52eee45b47438301b4ff5e6c925, type: 3}
       propertyPath: en
       value: Level 25
@@ -500,6 +505,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8313398983004523347, guid: b7cfc52eee45b47438301b4ff5e6c925, type: 3}
   m_PrefabInstance: {fileID: 6842970095231990205}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4561739806715885295 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7041821278015278930, guid: b7cfc52eee45b47438301b4ff5e6c925, type: 3}
+  m_PrefabInstance: {fileID: 6842970095231990205}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &7740278485559383043 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3863493979982130622, guid: b7cfc52eee45b47438301b4ff5e6c925, type: 3}

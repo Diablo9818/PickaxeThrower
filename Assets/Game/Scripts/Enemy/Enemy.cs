@@ -44,6 +44,7 @@ public class Enemy : MonoBehaviour
         InvokeTotalCountChangedWithDelay(3f);
         Instantiate(_effect, transform.position, transform.rotation);
         gameObject.SetActive(false);
+        _enemyPointer.gameObject.SetActive(false);
         Instantiate(_deadEnemy, transform.position, transform.rotation);
         Destroy(transform.parent.gameObject, 3f);
     }
@@ -60,7 +61,7 @@ public class Enemy : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(_isFalling)
+        if(_isFalling && collision.gameObject.tag != "Player")
         {
             Die();
         }
@@ -87,6 +88,7 @@ public class Enemy : MonoBehaviour
         {
             _animator.SetTrigger("Fall");
             _isFalling = true;
+            _enemyPointer.gameObject.SetActive(false);
             PlayFallSound();
             Debug.Log("No collision detected within 2 meter downwards.");
         }

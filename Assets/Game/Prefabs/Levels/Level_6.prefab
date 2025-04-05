@@ -448,6 +448,10 @@ PrefabInstance:
       propertyPath: tr
       value: Seviye 6
       objectReference: {fileID: 0}
+    - target: {fileID: 8539185147167158903, guid: afd203be9445e5d46a37ee4adcecbfe0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 14.54
+      objectReference: {fileID: 0}
     - target: {fileID: 9068486983456769007, guid: afd203be9445e5d46a37ee4adcecbfe0, type: 3}
       propertyPath: _enemyCount
       value: 5
@@ -494,7 +498,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8795775127844834676, guid: f5560b439975ddf409ea23d3253875fd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 24.76
+      value: 25.57
       objectReference: {fileID: 0}
     - target: {fileID: 8795775127844834676, guid: f5560b439975ddf409ea23d3253875fd, type: 3}
       propertyPath: m_LocalPosition.z

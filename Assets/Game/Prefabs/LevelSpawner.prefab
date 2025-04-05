@@ -76,5 +76,5 @@ MonoBehaviour:
   - {fileID: 1341004568361228167, guid: 0e359bf2748302644a698f7058eb4577, type: 3}
   - {fileID: 7071512179703361144, guid: 8a9c030e38a01d84797ab1ea6c055755, type: 3}
   - {fileID: 8289470392627928445, guid: 4138704d55be85041a53b70c87faa37b, type: 3}
-  _currentLevelIndex: 5
+  _currentLevelIndex: 29
   _levelSpawner: {fileID: 3122753136209322596}

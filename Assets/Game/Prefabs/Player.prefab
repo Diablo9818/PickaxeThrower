@@ -453,6 +453,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: dfea174747377f742bcfa38a2a7787af, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 1164647483463119894, guid: dfea174747377f742bcfa38a2a7787af, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -744,13 +748,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b92f46bcb05abb4a9ea59d1e6e70ab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cameraFollow: {fileID: 0}
   spawnPoint: {fileID: 5523943395295471447}
   projectilePrefab: {fileID: 5164670620000940428, guid: 0edd0954bb99c8649ab454913f8f3966, type: 3}
   animator: {fileID: 2475477236269248139}
   playerRotator: {fileID: 9222387873444575229}
   arrow: {fileID: 4073909523591489519}
-  _enemyLevelController: {fileID: 0}
 --- !u!114 &1692505875133466477
 MonoBehaviour:
   m_ObjectHideFlags: 0

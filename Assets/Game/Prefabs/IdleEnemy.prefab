@@ -331,7 +331,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemy: {fileID: 6729692283588120695}
-  _pointerManager: {fileID: 0}
 --- !u!1 &3067139004080515830
 GameObject:
   m_ObjectHideFlags: 0
@@ -504,6 +503,7 @@ MonoBehaviour:
   _animator: {fileID: 3767105487434878883}
   _fall: {fileID: 8300000, guid: cec23520d4b227f4a8cfbe93e1d0201a, type: 3}
   _death: {fileID: 8300000, guid: 8bd854b6bf0b7ae4c9054bf10cb74103, type: 3}
+  _enemyPointer: {fileID: 0}
   OnDeath:
     m_PersistentCalls:
       m_Calls:
@@ -936,7 +936,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f640eb8e804f274c8bc286f8576822d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemyLevelController: {fileID: 0}
+  _enemy: {fileID: 6729692283588120695}
 --- !u!1 &8081876733727371376
 GameObject:
   m_ObjectHideFlags: 0

@@ -45,9 +45,9 @@ public class EnemyLevelController : MonoBehaviour
         }
     }
 
-    public void InitBoss( bool isOrientationPortrait, Level_UI levelUI)
+    public void InitBoss( bool isOrientationPortrait, Level_UI levelUI, AudioService audioService)
     {
-        _boss.Init(isOrientationPortrait, levelUI);
+        _boss.Init(isOrientationPortrait, levelUI, audioService);
     }
 
     public void SetLevelUI(Level_UI level_UI)

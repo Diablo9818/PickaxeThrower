@@ -7,13 +7,19 @@ using UnityEngine.UI;
 public class BossHealth : MonoBehaviour
 {
     [SerializeField] private int _health;
+    [SerializeField] private AudioClip _explosion;
+    [SerializeField] private ParticleSystem _effect;
+        
     private Level_UI _levelUI;
+    private AudioService _audioService;
+    
     public event UnityAction<float> OnHealthChanged;
     public event UnityAction OnBossDied;
 
-    public void Initialize(Level_UI levelUI)
+    public void Initialize(Level_UI levelUI, AudioService audioService)
     {
-       _levelUI = levelUI; 
+       _levelUI = levelUI;
+       _audioService = audioService;
     }
     
     public int GetCurrentHealth()
@@ -54,6 +60,8 @@ public class BossHealth : MonoBehaviour
         if(other.TryGetComponent(out PickAxe pickAxe))
         {
             TakeDamage(pickAxe.Strenght);
+            Instantiate(_effect, transform.position, transform.rotation);
+            _audioService.PlaySound(_explosion,false);
             Debug.Log("Enemy Shooted.pickaxe Strength= "+pickAxe.Strenght);
             pickAxe.Die();
         }

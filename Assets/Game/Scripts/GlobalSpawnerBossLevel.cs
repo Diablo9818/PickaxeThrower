@@ -22,7 +22,7 @@ public class GlobalSpawnerBossLevel : GlobalSpawner
         _uiLevelFabric.Init(_audioService, _gamePhase, _isOrientationPortrait,_levelSpawner, _enemyLevelController, player.Shooter);
         Level_UI level_UI = _uiLevelFabric.CreateLevelUI();
         
-        _enemyLevelController.InitBoss(_isOrientationPortrait, level_UI);
+        _enemyLevelController.InitBoss(_isOrientationPortrait, level_UI, _audioService);
         
         _enemyLevelController.SetLevelUI(level_UI);
         level_UI.gameObject.SetActive(true);

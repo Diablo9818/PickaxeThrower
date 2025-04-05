@@ -14,10 +14,10 @@ public class Boss : MonoBehaviour
     private bool _isOrientationPortrait;
     private Canvas _bossHealthCanvas;
 
-    public void Init(bool isOrientationPortrait, Level_UI levelUI)
+    public void Init(bool isOrientationPortrait, Level_UI levelUI, AudioService audioService)
     {
         _isOrientationPortrait = isOrientationPortrait;
-        _bossHealth.Initialize(levelUI);
+        _bossHealth.Initialize(levelUI, audioService);
         _bossHealthUI.Initialize(isOrientationPortrait);
     }
 
